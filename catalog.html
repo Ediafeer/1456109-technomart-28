@@ -17,7 +17,6 @@
       <span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      </p>
       <span>Равшан Джамшутович</span>
       <a href="blank.html">Мои заказы</a>
       <a href="blank.html">Личный кабинет</a> 
@@ -34,8 +33,8 @@
       </nav>
     </header>
     <main>
-      <h1>Каталог продукции</h1>
         <section>
+          <h1>Каталог продукции</h1>
           <a href="index.html">
             <img src="" alt="иконка домик">
           </a>
@@ -45,25 +44,42 @@
                 <li><a href="blank.html">Перфораторы</a></li>
             </ul>
         </section>
-        <h2>ПЕРФОРАТОРЫ</h2>
+        <h2>Перфараторы</h2>
         <section>
-            <h3>ПРОИЗВОДИТЕЛИ</h3>
+            <h3>Производители</h3>
             <form>
-              <input type="checkbox" checked>BOSCH
-              <input type="checkbox">ИНТЕРСКОЛ
-              <input type="checkbox" checked>MAKITA
-              <input type="checkbox">DEWALT
-              <input type="checkbox">HITACHI
+              <p>
+                <input type="checkbox" name="Bosch" id="checkbox1" checked>
+                  <label for="checkbox1">BOSCH</label>
+              </p>
+              <p>
+                <input type="checkbox" name="ИНТЕРСКОЛ" id="checkbox2">
+                  <label for="checkbox2">ИНТЕРСКОЛ</label>
+              </p>
+              <p>
+                <input type="checkbox" name="MAKITA" id="checkbox3" checked>
+                  <label for="checkbox3">MAKITA</label>
+              </p>
+              <p>
+                <input type="checkbox" name="DEWALT" id="checkbox4">
+                  <label for="checkbox4">DEWALT</label>
+              </p>
+              <p>
+                <input type="checkbox" name="HITACHI" id="checkbox5">
+                  <label for="checkbox5">HITACHI</label>
+              </p>
             </form>
-            <h3>ПИТАНИЕ</h3>
+            <h3>Питание</h3>
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <label>
-                <input type="radio" name="question-one" value="АККУМУЛЯТОРНЫЕ" checked> АККУМУЛЯТОРНЫЕ
-              </label>
-              <label>
-                <input type="radio" name="question-one" value="СЕТЕВЫЕ"> СЕТЕВЫЕ
-              </label>
-              <input type="submit" value="Показать">
+              <p>
+                <input type="radio" name="question-one" value="АККУМУЛЯТОРНЫЕ" id="question1" checked> 
+                  <label for="question1">Аккамуляторные</label>
+              </p>
+              <p>
+                <input type="radio" name="question-one" value="СЕТЕВЫЕ" id="question2"> 
+                  <label for="question2">Сетевые</label>
+              </p>
+              <button type="submit" value="Показать"></button>
             </form>
         </section>
         <section>
