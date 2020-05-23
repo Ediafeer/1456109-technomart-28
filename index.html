@@ -113,6 +113,7 @@
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!</p>
+             <img src="img/delivery.png" width="468" height="261" alt="Доставка">
           </li>
           <li>
             <h3>Гарантия</h3>
@@ -122,10 +123,13 @@
                гарантии. Мы обменяем сгоревший товар на новый.
                 Дом уж восстановите как-нибудь сами.
               </p>
+              <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
           </li>
           <li>
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <button type="submit" value="Отправить заявку">Отправить заявку</button>
+            <img src="img/credit.png" width="465" height="285" alt="Кредит">
           </li>
         </ul>
         <button type="button"></button>
@@ -197,5 +201,28 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Написать нам</h2>
+      <form action="https://echo.htmlacademy.ru/" method="POST">
+        <p>
+          <input type="text" id="ap-name" name="name" placeholder="Имя Фамилия">
+          <label for="ap-name">Ваше имя:</label>
+        </p>
+        <p>
+          <input type="email" name="email" id="ap-email" placeholder="email@example.com">
+          <label for="ap-email">Ваш e-mail:</label>
+        </p>
+        <p>
+          <input type="text" name="text" id="ap-text" placeholder="В свободной форме">
+          <label for="ap-text">Текст письма:</label>
+        </p>
+        <button type="submit">Оформить заказ</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
