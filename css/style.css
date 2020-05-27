@@ -7,6 +7,7 @@
   --basic-graylight: #C5C5C5;
   --basic-background: #F1F5F7;
   --basic-text: #000000;
+  --basic-yellow: #FFDA96;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
@@ -44,6 +45,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.logo {
+  background-color: var(--basic-red);
 }
 
 .visually-hidden {
@@ -95,10 +100,12 @@ img {
 
 .site-nav a:focus {
   background-color: var(--click-grey);
+  opacity: 0.5;
 }
 
 .nav-link a:focus {
   background-color: var(--click-grey-nav-link);
+  opacity: 0.5;
 }
 
 .nav-link input:active {
@@ -106,5 +113,44 @@ img {
 }
 
 /*Navigation footer*/
+
+.footer-nav {
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--special-grey);
+}
+
+.footer-link {
+  font-size: 18px;
+  color: var(--white);
+  background-color: var(--guidance-grey);
+}
+
+.footer-list li:nth-child(6),
+.footer-list li:nth-child(7),
+.footer-list li:nth-child(8),
+.footer-list li:nth-child(9) {
+  color: var(--basic-yellow);
+}
+
+.mail a:link,
+.developer a:link {
+  color: var(--basic-yellow);
+}
+
+.footer-nav a,
+.footer-link a {
+  color: inherit;
+}
+
+.footer-nav a:hover,
+.footer-link a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav a:focus,
+.footer-link a:focus {
+  opacity: 0.5;
+}
 
 
