@@ -121,8 +121,6 @@ img {
 }
 
 .footer-link {
-  font-size: 18px;
-  color: var(--white);
   background-color: var(--guidance-grey);
 }
 
@@ -133,23 +131,23 @@ img {
   color: var(--basic-yellow);
 }
 
-.mail a:link,
-.developer a:link {
+.mail a:link {
   color: var(--basic-yellow);
 }
 
-.footer-nav a,
-.footer-link a {
+.dev a:link {
+  color: var(--basic-yellow);
+}
+
+.footer-nav a {
   color: inherit;
 }
 
-.footer-nav a:hover,
-.footer-link a:hover {
+.footer-nav a:hover {
   text-decoration: underline;
 }
 
-.footer-nav a:focus,
-.footer-link a:focus {
+.footer-nav a:focus {
   opacity: 0.5;
 }
 
