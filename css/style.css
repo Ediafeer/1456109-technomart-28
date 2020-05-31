@@ -74,6 +74,7 @@ address {
   padding: 0;
 }
 
+
 /*Grid*/
 
 .page {
@@ -103,20 +104,21 @@ address {
 
 /*Navigation header*/
 
-.header .logo {
+.logo-background {
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
 }
 
+
 .navigation-link .list{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   font-size: 18px;
   color: var(--white);
-  height: 47px;
+  max-height: 47px;
 }
 
 .background-navigation-link{
@@ -144,6 +146,7 @@ address {
 .navigation-link a:hover,
 .navigation-link input:hover {
   background-color: var(--guidance-grey);
+  padding: auto;
 }
 
 .site-navigation a:focus {
@@ -158,6 +161,15 @@ address {
 
 .navigation-link input:active {
   background-color: var(--white);
+}
+
+.decoration-green {
+  background-color: var(--basic-green);
+  padding: 11px;
+}
+
+.decoration-green a:hover {
+  background-color: var(--success);
 }
 
 .header-contact{
@@ -211,6 +223,7 @@ address {
 
 .user-navigation{
   display: flex;
+  justify-content: space-between;
 }
 
 .enter-button,
@@ -320,7 +333,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--white);
 }
 
@@ -330,7 +343,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--white);
   padding-bottom: 50px;
 }
@@ -364,6 +377,34 @@ address {
 
 
 /*Footer navigation*/
+.footer-all-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 37px;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-all-menu .logo {
+  width: 220px;
+  height: 68px;
+  background-color: var(--basic-red);
+  margin-bottom: 22px;
+}
 
 .footer-navigation {
   font-size: 18px;
@@ -386,9 +427,13 @@ address {
 }
 
 .footer-link {
-  background-color: var(--guidance-grey);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   font-size: 16px;
   line-height: 18px;
+}
+.footer-link-background {
+  background-color: var(--guidance-grey);
 }
 
 .mail a:link {
