@@ -108,10 +108,10 @@ address {
   background-color: var(--basic-red);
 }
 
-.navigation-link {
+.navigation-link .list{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
   font-size: 18px;
   color: var(--white);
 }
@@ -168,6 +168,7 @@ address {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
+  margin-top: 38px;
 }
 
 .telephone {
@@ -179,10 +180,13 @@ address {
 }
 
 .telephone-frame {
+  display: flex;
+  text-align: center;
   width: 270px;
   height: 45px;
   border: 3px solid;
   border-color: var(--white);
+  margin-top: 41px;
 }
 
 .header-address {
@@ -191,14 +195,48 @@ address {
   color: var(--special-grey);
 }
 
-.navigation {
+.navigation .site-navigation {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   font-size: 18px;
   color: var(--white);
   background-color: var(--special-grey);
+  height: 60px;
 }
+
+.user-navigation{
+  display: flex;
+}
+
+.enter-button,
+.registration-button {
+  align-items: flex-start;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  margin-top: 41px;
+  margin-bottom: 67px;
+}
+
+.enter-button {
+  width: 121px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.registration-button {
+  width: 150px;
+}
+
+.enter-button a,
+.registration-button a {
+  color: var(--basic-text);
+  font-size: 21px;
+  line-height: 21px;
+  font-family: var(--second-font);
+}
+
 
 
 
