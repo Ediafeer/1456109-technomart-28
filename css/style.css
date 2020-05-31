@@ -23,6 +23,7 @@
   --error: #BA2732;
   --white: #ffffff;
   --grey: #a9a9a9;
+  --grey-die: #F9F5F0;
 
   --base-font: 'PT Sans', sans-serif;
   --second-font: 'Cuprum', sans-serif;
@@ -112,8 +113,10 @@ address {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   font-size: 18px;
   color: var(--white);
+  height: 47px;
 }
 
 .background-navigation-link{
@@ -237,6 +240,107 @@ address {
   font-family: var(--second-font);
 }
 
+                               /*Main content*/
+                               /*Advertising*/
+
+.advertising {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: var(--white);
+  padding-top: 59px;
+}
+
+.white-background {
+  background-color: var(--white);
+}
+
+.advertising li {
+  float: left;
+}
+
+.materials {
+  background-color: var(--special-yellow);
+  width: 300px;
+  height: 123px;
+}
+
+.tool {
+  margin-left: 20px;
+  background-color: var(--special-blue);
+  width: 300px;
+  height: 123px;
+}
+
+.technic {
+  margin-left: 20px;
+  background-color: var(--special-lilac);
+  width: 300px;
+  height: 123px;
+}
+
+.discounts {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: var(--special-greenlight);
+  width: 300px;
+  height: 123px;
+}
+
+.delivery {
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: var(--special-yellow);
+  width: 300px;
+  height: 123px;
+}
+
+.slider {
+  width: 620px;
+  height: 266px;
+  order: 4;
+  margin-top: 20px;
+  background-color: var(--basic-yellow);
+}
+
+/*Popular*/
+
+.popular-background {
+  background-color: var(--white);
+}
+
+.popular-product {
+  display: flex;
+  background-color: var(--grey-die);
+  margin-top: 59px;
+  margin-bottom: 20px;
+}
+
+.catalog-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  background-color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,6 +352,9 @@ address {
   color: var(--white);
   background-color: var(--special-grey);
   font-family: var(--second-font);
+}
+.footer-navigation-background {
+  background-color: var(--special-grey);
 }
 
 .footer-menu a {
@@ -303,7 +410,6 @@ address {
   height: 318px;
   border: 1px solid var(--special-greylight);
   text-align: center;
-  margin-left: 20px;
   background-color: var(--white);
 }
 
