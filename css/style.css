@@ -24,8 +24,8 @@
   --white: #ffffff;
   --grey: #a9a9a9;
 
-  --base-font: 'PT Sans, Arial', sans-serif;
-  --second-font: 'Cuprum, Arial Narrow', sans-serif;
+  --base-font: 'PT Sans', sans-serif;
+  --second-font: 'Cuprum', sans-serif;
 
 }
 
@@ -50,6 +50,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -127,8 +131,10 @@ img {
 }
 
 .site-navigation a,
-.navigation-link a {
+.navigation-link a,
+.navigation-link input {
   color: inherit;
+  font-family: var(--second-font);
 }
 
 .site-navigation a:hover,
@@ -179,7 +185,7 @@ img {
   border-color: var(--white);
 }
 
-.address {
+.header-address {
   font-family: var(--second-font);
   font-size: 14px;
   color: var(--special-grey);
@@ -203,18 +209,23 @@ img {
   font-size: 18px;
   color: var(--white);
   background-color: var(--special-grey);
+  font-family: var(--second-font);
 }
 
-.footer-navigation a:link {
+.footer-menu a {
   color: inherit;
+  font-size: 18px;
+}
+
+.footer-list a {
+  color: var(--basic-yellow);
+  font-size: 18px;
 }
 
 .footer-link {
   background-color: var(--guidance-grey);
-}
-
-.footer-list li {
-  color: var(--basic-yellow);
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .mail a:link {
@@ -225,8 +236,6 @@ img {
   color: var(--basic-yellow);
 }
 
-
-
 .footer-navigation a:hover {
   text-decoration: underline;
 }
@@ -235,7 +244,14 @@ img {
   opacity: 0.5;
 }
 
+.footer-telephone {
+  color: var(--white);
+  font-style: normal;
+}
 
+.social a {
+  color: var(--white);
+}
 
 
 
