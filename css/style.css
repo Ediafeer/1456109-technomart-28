@@ -303,13 +303,13 @@ address {
   background-color: var(--basic-yellow);
 }
 
-/*Popular*/
+/*Popular products*/
 
 .popular-background {
   background-color: var(--white);
 }
 
-.popular-product {
+.popular {
   display: flex;
   background-color: var(--grey-die);
   margin-top: 59px;
@@ -324,7 +324,25 @@ address {
   background-color: var(--white);
 }
 
+/*Popular manufacturers*/
 
+.manufacturers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+  background-color: var(--white);
+  padding-bottom: 50px;
+}
+
+.manufacturers li {
+  width: 220px;
+  height: 145px;
+  border: 1px solid var(--special-greylight);
+  text-align: center;
+  background-color: var(--white);
+  margin-bottom: 20px;
+}
 
 
 
