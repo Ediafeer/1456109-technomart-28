@@ -84,7 +84,6 @@ input {
   padding: 0;
 }
 
-
 /*Grid*/
 
 .page {
@@ -416,7 +415,7 @@ input {
   height: 266px;
   order: 4;
   margin-top: 20px;
-  background-image: url(/img/Layer99.png);
+  background-image: url(img/perforators.jpg);
 }
 
 .slider-tint {
@@ -454,10 +453,41 @@ input {
 }
 
 .popular {
-  display: flex;
+  position: static;
   background-color: var(--grey-die);
   margin-top: 59px;
-  margin-bottom: 20px;
+  width: 940px;
+  height: 89px;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: var(--second-font);
+  color: var(--special-grey);
+}
+
+.popular-product {
+  position: absolute;
+  margin-left: 28px;
+  margin-top: 29px;
+}
+
+.all-popular {
+  position: absolute;
+  width: 192px;
+  height: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-red);
+  color: var(--white);
+  text-transform: uppercase;
+  margin-left: 734px;
+  margin-top: 25px;
+}
+
+.all-popular-text {
+  position: absolute;
+  margin-left: 24px;
+  margin-top: 11px;
 }
 
 .catalog-main {
@@ -466,6 +496,7 @@ input {
   align-items: baseline;
   justify-content: space-between;
   background-color: var(--white);
+  margin-top: 20px;
 }
 
 /*Popular manufacturers*/
