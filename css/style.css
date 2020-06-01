@@ -110,6 +110,14 @@ address {
   background-color: var(--basic-red);
 }
 
+.logo-header {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 55px;
+  margin-right: 57px;
+  margin-bottom: 17px;
+}
+
 
 .navigation-link .list{
   display: flex;
@@ -187,11 +195,16 @@ address {
 }
 
 .telephone {
+  display: block;
   color: var(--basic-red);
   font-family: var(--second-font);
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
+  margin-top: 7px;
+  margin-left: 74px;
+  margin-right: 45px;
+  margin-bottom: 8px;
 }
 
 .telephone-frame {
@@ -251,6 +264,19 @@ address {
   font-size: 21px;
   line-height: 21px;
   font-family: var(--second-font);
+}
+
+.enter {
+  display: block;
+  margin-top: 12px;
+  margin-left: 45px;
+  margin-bottom: 12px;
+  margin-right: 27px;
+}
+
+.registration {
+  display: block;
+  margin: 12px 24px;
 }
 
                                /*Main content*/
