@@ -57,6 +57,11 @@ address {
   font-style: normal;
 }
 
+button {
+  list-style: none;
+  border: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -288,6 +293,7 @@ address {
   align-items: stretch;
   background-color: var(--white);
   padding-top: 59px;
+  font-family: var(--second-font);
 }
 
 .white-background {
@@ -299,9 +305,42 @@ address {
 }
 
 .materials {
+  display: flex;
+  flex-direction: column;
   background-color: var(--special-yellow);
   width: 300px;
   height: 123px;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.materials-text,
+.tool-text,
+.technic-text,
+.discounts-text,
+.delivery-text {
+  display: block;
+  margin-top: 20px;
+  margin-left: 23px;
+}
+
+.materials-link,
+.tool-link,
+.technic-link,
+.discounts-link,
+.delivery-link {
+  display: block;
+  width: 135px;
+  height: 38px;
+  background-color: var(--white);
+  filter: opacity(0.5);
+  margin-top: 14px;
+  margin-left: 23px;
+}
+
+.materials-link-text {
+  color: var(--white);
 }
 
 .tool {
@@ -309,6 +348,9 @@ address {
   background-color: var(--special-blue);
   width: 300px;
   height: 123px;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
 }
 
 .technic {
@@ -316,6 +358,9 @@ address {
   background-color: var(--special-lilac);
   width: 300px;
   height: 123px;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
 }
 
 .discounts {
@@ -324,6 +369,9 @@ address {
   background-color: var(--special-greenlight);
   width: 300px;
   height: 123px;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
 }
 
 .delivery {
@@ -332,14 +380,46 @@ address {
   background-color: var(--special-yellow);
   width: 300px;
   height: 123px;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.materials a,
+.tool a,
+.technic a,
+.discounts a,
+.delivery a {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
 }
 
 .slider {
+  display: flex;
   width: 620px;
   height: 266px;
   order: 4;
   margin-top: 20px;
-  background-color: var(--basic-yellow);
+  background-image: url(/img/Layer99.png);
+}
+
+.slider-tint {
+  position: absolute;
+  width: 620px;
+  height: 104px;
+  color: var(--white);
+  background-color: rgba(00, 00, 00, 0.5);
+}
+
+.button-open-catalog {
+  position: absolute;
+  margin-top: 201px;
+  margin-left: 24px;
+  width: 192px;
+  height: 38px;
+  color: var(--white);
+  background-color: var(--basic-red);
 }
 
 /*Popular products*/
