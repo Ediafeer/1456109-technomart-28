@@ -285,66 +285,33 @@ input {
   margin-top: 41px;
 }
 
+.telephone::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -39px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.telephone {
+  position: relative;
+}
+
+
 .header-address {
   font-family: var(--second-font);
   font-size: 14px;
   color: var(--special-grey);
 }
 
-
-/*Main menu*/
-
-.navigation ul {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: var(--second-font);
-  color: var(--white);
-  font-size: 18px;
-  background-color: var(--special-grey);
-  height: 60px;
-}
-
-.site-navigation a {
-  display: block;
-  color: inherit;
-  padding-top: 16px;
-  padding-bottom: 20px;
-  padding-left: 29px;
-  padding-right: 29px;
-}
-
-.main-page a {
-  padding-left: 52px;
-}
-
-.contact-page a {
-  padding-right: 45px;
-}
-
-.site-navigation a:hover {
-  background-color: var(--guidance-grey);
-}
-
-.site-navigation a:active {
-  opacity: 0.5;
-}
-
-/*.navigation .site-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 18px;
-  color: var(--white);
-  background-color: var(--special-grey);
-  height: 60px;
-}*/
-
 .user-navigation{
   display: flex;
   justify-content: space-between;
 }
-
 .enter-button,
 .registration-button {
   align-items: flex-start;
@@ -384,6 +351,55 @@ input {
   display: block;
   margin: 12px 24px;
 }
+
+.user-navigation a:hover {
+  color: var(--basic-red);
+}
+
+.user-navigation a:active {
+  color: var(--basic-graylight);
+}
+/*Main menu*/
+
+.navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--second-font);
+  color: var(--white);
+  font-size: 18px;
+  background-color: var(--special-grey);
+  height: 60px;
+}
+
+.site-navigation a {
+  display: block;
+  color: inherit;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
+.main-page a {
+  padding-left: 52px;
+}
+
+.contact-page a {
+  padding-right: 45px;
+}
+
+.site-navigation a:hover {
+  background-color: var(--guidance-grey);
+}
+
+.site-navigation a:active {
+  opacity: 0.5;
+}
+
+
+
+
+
 
                                /*Main content*/
                                /*Advertising*/
