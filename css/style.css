@@ -112,6 +112,11 @@ input {
 }
 
 /*Navigation header*/
+/*Logo header*/
+
+.background-navigation-link{
+  background-color: var(--special-grey);
+}
 
 .logo-background {
   position: absolute;
@@ -121,7 +126,7 @@ input {
 }
 
 .logo-header {
-  position: absolute;
+  position: static;
   margin-top: 12px;
   margin-left: 55px;
   margin-right: 57px;
@@ -129,23 +134,13 @@ input {
 }
 
 
-.background-navigation-link{
-  background-color: var(--special-grey);
-}
-
-.navigation-link .list {
+.navigation-link  ul{
   display: flex;
   flex-wrap: wrap;
-  padding-left: 533px;
-  height: 42px;
-  font-size: 18px;
-  color: var(--white);
-
 }
 
-.navigation-link input {
+.search {
   display: block;
-  position: absolute;
   margin-left: 220px;
   width: 271px;
   height: 42px;
@@ -153,45 +148,104 @@ input {
   background-color: var(--special-grey);
 }
 
-.site-navigation a,
-.navigation-link a,
 .navigation-link input {
+  padding-left: 42px;
+}
+
+.navigation-link a {
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
   color: inherit;
+}
+
+.navigation-link li {
+  font-size: 18px;
+  line-height: 24px;
   font-family: var(--second-font);
+  color: var(--white);
 }
 
-.site-navigation a:hover,
-.navigation-link a:hover,
-.navigation-link input:hover {
-  background-color: var(--guidance-grey);
-  padding: auto;
+
+.bookmarks a {
+  padding-left: 43px;
+  padding-right: 30px;
 }
 
-.site-navigation a:focus {
-  background-color: var(--click-grey);
-  opacity: 0.5;
+.basket a {
+  padding-left: 43px;
+  padding-right: 30px;
 }
 
-.navigation-link a:focus {
-  background-color: var(--click-grey-nav-link);
-  opacity: 0.5;
-}
-
-.navigation-link input:active {
-  background-color: var(--white);
-}
-
-.decoration-green {
-  position: absolute;
-  right: auto;
-  /*margin-left: 790px;*/
+.order a {
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--basic-green);
-  padding: 9px;
 }
 
-.decoration-green a:hover {
+/*icon header*/
+
+.bookmarks-link::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.bookmarks-link {
+  position: relative;
+}
+
+.basket-link::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 18px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.basket-link {
+  position: relative;
+}
+
+/*hover and click*/
+
+.order a:hover {
   background-color: var(--success);
 }
+
+.bookmarks-link:hover::before {
+  opacity: 1;
+}
+
+.basket-link:hover::before {
+  opacity: 1;
+}
+
+.logo-background:active {
+  background-color: var(--error);
+}
+
+.navigation-link a:active {
+  opacity: 0.5;
+}
+
+.navigation-link input:focus {
+  background-color: var(--white);
+  color: var(--basic-text);
+}
+
 
                                /* Header 2-й Уровень  */
 
@@ -415,7 +469,7 @@ input {
   height: 266px;
   order: 4;
   margin-top: 20px;
-  background-image: url(img/perforators.jpg);
+  background-image: url("../img/Layer99.png");
 }
 
 .slider-tint {
