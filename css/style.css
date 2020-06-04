@@ -114,34 +114,38 @@ input {
 /*Navigation header*/
 /*Logo header*/
 
-.background-navigation-link{
+.navigation-background-top{
   background-color: var(--special-grey);
 }
 
 .logo-background {
-  position: absolute;
+  display: inline-flex;
   width: 220px;
   height: 47px;
   background-color: var(--basic-red);
+  margin-bottom: -5px;
 }
 
 .logo-header {
-  position: static;
   margin-top: 12px;
   margin-left: 55px;
   margin-right: 57px;
   margin-bottom: 17px;
 }
 
+.header-navigation {
+  display: flex;
+}
 
-.navigation-link  ul{
+
+ul.list.navigation-link{
   display: flex;
   flex-wrap: wrap;
 }
 
+
 .search {
   display: block;
-  margin-left: 220px;
   width: 271px;
   height: 42px;
   color: var(--white);
@@ -150,6 +154,10 @@ input {
 
 .navigation-link input {
   padding-left: 42px;
+}
+
+.width-search {
+  flex-grow: 1;
 }
 
 .navigation-link a {
@@ -166,15 +174,12 @@ input {
   color: var(--white);
 }
 
-
+.basket a,
 .bookmarks a {
+  min-width: 150px;
+  box-sizing: border-box;
   padding-left: 43px;
-  padding-right: 30px;
-}
-
-.basket a {
-  padding-left: 43px;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 
 .order a {
@@ -197,7 +202,7 @@ input {
   background-position: 0 0;
   opacity: 0.3;
 }
-
+.basket-link,
 .bookmarks-link {
   position: relative;
 }
@@ -215,9 +220,6 @@ input {
   opacity: 0.3;
 }
 
-.basket-link {
-  position: relative;
-}
 
 /*hover and click*/
 
@@ -225,10 +227,8 @@ input {
   background-color: var(--success);
 }
 
-.bookmarks-link:hover::before {
-  opacity: 1;
-}
 
+.bookmarks-link:hover::before,
 .basket-link:hover::before {
   opacity: 1;
 }
@@ -312,44 +312,39 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.enter-button,
-.registration-button {
-  align-items: flex-start;
-  border: 1px solid var(--white);
-  background-color: var(--white);
+.enter-button {
+  display: block;
   margin-top: 41px;
   margin-bottom: 67px;
-}
-
-.enter-button {
-  width: 121px;
-  height: 45px;
-  margin-right: 10px;
+  margin-left: 69px;
+  box-sizing: border-box;
 }
 
 .registration-button {
-  width: 150px;
+  display: block;
+  margin-top: 41px;
+  margin-bottom: 67px;
+  margin-left: 10px;
+  box-sizing: border-box;
 }
 
-.enter-button a,
-.registration-button a {
+
+.registration-button a,
+.enter-button a {
+  display: block;
+  min-width: 121px;
   color: var(--basic-text);
   font-size: 21px;
   line-height: 21px;
   font-family: var(--second-font);
+  text-align: center;
+  background-color: var(--white);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-.enter {
-  display: block;
-  margin-top: 12px;
-  margin-left: 45px;
-  margin-bottom: 12px;
-  margin-right: 27px;
-}
-
-.registration {
-  display: block;
-  margin: 12px 24px;
+.registration-button a {
+  min-width: 150px;
 }
 
 .user-navigation a:hover {
@@ -360,6 +355,12 @@ input {
   color: var(--basic-graylight);
 }
 /*Main menu*/
+
+.site-navigation li {
+  flex-grow: 1;
+  text-align: center;
+}
+
 
 .navigation ul {
   display: flex;
@@ -376,16 +377,14 @@ input {
   color: inherit;
   padding-top: 16px;
   padding-bottom: 20px;
-  padding-left: 29px;
-  padding-right: 29px;
 }
 
 .main-page a {
-  padding-left: 52px;
+  padding-left: 22px;
 }
 
 .contact-page a {
-  padding-right: 45px;
+  padding-right: 22px;
 }
 
 .site-navigation a:hover {
@@ -536,7 +535,7 @@ input {
 
 .announcement-link-text {
   display: inline-block;
-  position: absolute;
+  /*position: absolute;*/
   text-transform: uppercase;
   margin-top: 10px;
   margin-left: 26px;
@@ -544,9 +543,6 @@ input {
   font-family: var(--second-font);
   font-size: 14px;
 }
-
-
-
 
 .materials-text,
 .tool-text,
@@ -571,10 +567,6 @@ input {
   margin-top: 64px;
   margin-left: 23px;
 }
-
-
-
-
 
 .materials a,
 .tool a,
