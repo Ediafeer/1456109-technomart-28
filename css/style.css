@@ -53,19 +53,11 @@ img {
   height: auto;
 }
 
-address {
-  font-style: normal;
-}
-
 button {
   list-style: none;
   border: none;
 }
 
-input {
-  list-style: none;
-  border: none;
-}
 
 .visually-hidden {
   position: absolute;
@@ -210,7 +202,8 @@ ul.list.navigation-link{
 .basket-link,
 .bookmarks-link,
 .enter,
-.search {
+.search,
+.telephone {
   position: relative;
 }
 
@@ -305,11 +298,6 @@ ul.list.navigation-link{
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
-.telephone {
-  position: relative;
-}
-
 
 .header-address {
   font-family: var(--second-font);
@@ -562,7 +550,7 @@ ul.list.navigation-link{
   min-height: 266px;
   background-image: url("../img/Layer99.png");
 }
-  /*Проверяй до этого места*/
+                                                   /*Проверяй до этого места*/
 
 .button-open-catalog {
   position: absolute;
