@@ -466,28 +466,43 @@ ul.list.navigation-link{
   grid-column: 1;
   display: block;
   background-color: var(--special-yellow);
+  background-image: url("../img/icon-materials.svg");
+  background-repeat: no-repeat;
+  background-position: right 43px top 31px;
 }
 
 .tool {
   grid-column: 2;
   background-color: var(--special-blue);
+  background-image: url("../img/icon-tool.svg");
+  background-repeat: no-repeat;
+  background-position: right 31px top 34px;
 }
 
 .technic {
   grid-column: 3;
   background-color: var(--special-lilac);
+  background-image: url("../img/icon-technic.svg");
+  background-repeat: no-repeat;
+  background-position: right 31px top 31px;
 }
 
 .delivery {
   grid-column: 3;
   grid-row: 3;
   background-color: var(--special-yellow);
+  background-image: url("../img/icon-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: right 45px top 26px;
 }
 
 .discounts {
   grid-column: 3;
   grid-row: 2;
   background-color: var(--special-greenlight);
+  background-image: url("../img/icon-discounts.svg");
+  background-repeat: no-repeat;
+  background-position: right 31px top 32px;
 }
 
 .slider {
@@ -523,7 +538,25 @@ ul.list.navigation-link{
   text-align: center;
   box-sizing: border-box;
   padding-top: 10px;
+  text-transform: uppercase;
 }
+
+.materials-link:hover,
+.tool-link:hover,
+.technic-link:hover,
+.discounts-link:hover,
+.delivery-link:hover {
+  background: rgba(197, 197, 197, 0.3);
+}
+
+.materials-link:focus,
+.tool-link:focus,
+.technic-link:focus,
+.discounts-link:focus,
+.delivery-link:focus {
+  background: rgba(169, 169, 169, 0.3);
+}
+
 
 
 
