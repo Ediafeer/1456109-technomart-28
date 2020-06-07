@@ -54,7 +54,6 @@ img {
 }
 
 button {
-  list-style: none;
   border: none;
 }
 
@@ -74,6 +73,10 @@ button {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box
 }
 
 /*Grid*/
@@ -137,7 +140,6 @@ button {
 
 
 .search {
-  display: block;
   max-width: 271px;
   height: 42px;
   color: var(--white);
@@ -158,7 +160,6 @@ button {
 }
 
 .navigation-link a {
-  display: block;
   padding-top: 9px;
   padding-bottom: 9px;
   color: inherit;
@@ -195,10 +196,17 @@ button {
   width: 14px;
   height: 16px;
   background-image: url("../img/icon-bookmark.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   opacity: 0.3;
 }
+
+.bookmarks-link::before,
+.basket-link::before,
+.telephone::before,
+.enter::before {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .basket-link,
 .bookmarks-link,
 .enter,
@@ -215,8 +223,6 @@ button {
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   opacity: 0.3;
 }
 
@@ -254,7 +260,7 @@ button {
 }
 
 .activity {
-  padding-left: 20px;
+  padding-left: 30px;
   color: var(--basic-red);
   font-size: 16px;
   font-style: italic;
@@ -265,7 +271,6 @@ button {
 }
 
 .telephone {
-  display: block;
   color: var(--basic-red);
   font-family: var(--second-font);
   font-size: 21px;
@@ -273,8 +278,6 @@ button {
   font-weight: bold;
   margin-top: 7px;
   margin-left: 74px;
-  margin-right: 45px;
-  margin-bottom: 8px;
 }
 
 .telephone-frame {
@@ -295,14 +298,12 @@ button {
   width: 19px;
   height: 19px;
   background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .header-address {
   font-family: var(--second-font);
-  font-size: 14px;
   color: var(--special-grey);
+  font-style: normal;
 }
 
 .user-navigation{
@@ -310,15 +311,12 @@ button {
   justify-content: space-between;
 }
 .enter-button {
-  display: block;
   margin-top: 41px;
   margin-bottom: 67px;
   margin-left: 69px;
-  box-sizing: border-box;
 }
 
 .registration-button {
-  display: block;
   margin-top: 41px;
   margin-bottom: 67px;
   margin-left: 10px;
@@ -329,7 +327,7 @@ button {
 .registration-button a,
 .enter-button a {
   display: block;
-  min-width: 121px;
+  width: 121px;
   color: var(--basic-text);
   font-size: 21px;
   line-height: 21px;
@@ -364,8 +362,6 @@ button {
   top: 14px;
   left: 19px;
   background-image: url("../img/icon-login-in.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .enter:hover::before {
@@ -530,13 +526,71 @@ button {
 }
 
 .slider {
-  display: block;
+  width: 620px;
   min-height: 266px;
-  background-image: url("../img/Layer99.png");
+  background-image: url("../img/layer99.png");
+  padding-left: 24px;
 }
-                                                   /*Проверяй до этого места*/
+
+.title-slide {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--second-font);
+  color: var(--white);
+  padding-top: 23px;
+}
+
+.description-slide {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  padding-top: 5px;
+}
+
+.button-left {
+  background-image: url("../img/icon-left.svg");
+
+}
+
+.button-right {
+  background-image: url("../img/icon-right.svg");
+  margin-left: 532px;
+}
+
+.button-left,
+.button-right {
+  margin-top: 34px;
+  width: 22px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 
 .button-open-catalog {
+  display: inline-block;
+  color: var(--white);
+  line-height: 18px;
+  width: 192px;
+  height: 38px;
+  background-color: var(--basic-red);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 11px;
+  margin-top: 39px;
+}
+
+
+
+
+
+                                                   /*Проверяй до этого места*/
+
+/*.button-open-catalog {
   position: absolute;
   margin-top: 201px;
   margin-left: 24px;
@@ -554,13 +608,16 @@ button {
   margin-right: 46px;
   margin-bottom: 9px;
   line-height: 18px;
-}
+}*/
 
 /*Popular products*/
 
-.popular-background {
+/*.popular-background {
   background-color: var(--white);
-}
+}*/
+
+
+
 
 .popular {
   position: static;
