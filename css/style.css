@@ -135,12 +135,12 @@ button {
 
 
 .navigation-link li {
-  display: inline-flex;
+  display: inline-block;
 }
 
 
 .search {
-  max-width: 271px;
+  width: 271px;
   height: 42px;
   color: var(--white);
   background-color: var(--special-grey);
@@ -174,15 +174,15 @@ button {
 
 .basket a,
 .bookmarks a {
-  min-width: 150px;
-  box-sizing: border-box;
+  max-width: 150px;
   padding-left: 43px;
   padding-right: 5px;
 }
 
 .order a {
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 150px;
+  padding-left: 25px;
+  padding-right: 25px;
   background-color: var(--basic-green);
 }
 
@@ -211,7 +211,8 @@ button {
 .bookmarks-link,
 .enter,
 .search,
-.telephone {
+.telephone,
+.manufacturers-logo {
   position: relative;
 }
 
@@ -266,8 +267,8 @@ button {
   font-style: italic;
   line-height: 23px;
   margin-top: 38px;
-  width: 197px;
   font-family: var(--second-font);
+  padding-right: 30px;
 }
 
 .telephone {
@@ -313,7 +314,7 @@ button {
 .enter-button {
   margin-top: 41px;
   margin-bottom: 67px;
-  margin-left: 69px;
+  margin-left: 25px;
 }
 
 .registration-button {
@@ -461,7 +462,7 @@ button {
   background-color: var(--special-yellow);
   background-image: url("../img/icon-delivery.svg");
   background-repeat: no-repeat;
-  background-position: right 45px top 26px;
+  background-position: right 31px top 32px;
 }
 
 .discounts {
@@ -470,7 +471,7 @@ button {
   background-color: var(--special-greenlight);
   background-image: url("../img/icon-discounts.svg");
   background-repeat: no-repeat;
-  background-position: right 31px top 32px;
+  background-position: right 45px top 26px;
 }
 
 .slider {
@@ -526,7 +527,7 @@ button {
 }
 
 .slider {
-  width: 620px;
+  width: auto;
   min-height: 266px;
   background-image: url("../img/layer99.png");
   padding-left: 24px;
@@ -558,7 +559,7 @@ button {
 
 .button-right {
   background-image: url("../img/icon-right.svg");
-  margin-left: 532px;
+  margin-left: 520px;
 }
 
 .button-left,
@@ -584,102 +585,73 @@ button {
   margin-top: 39px;
 }
 
-
-
-
-
-                                                   /*Проверяй до этого места*/
-
-/*.button-open-catalog {
-  position: absolute;
-  margin-top: 201px;
-  margin-left: 24px;
-  width: 192px;
-  height: 38px;
-  color: var(--white);
-  background-color: var(--basic-red);
+.button-open-catalog:focus {
+  background-color: var(--error);
 }
 
-.open-catalog {
-  position: absolute;
-  text-transform: uppercase;
-  margin-top: 11px;
-  margin-left: 46px;
-  margin-right: 46px;
-  margin-bottom: 9px;
-  line-height: 18px;
-}*/
-
-/*Popular products*/
-
-/*.popular-background {
-  background-color: var(--white);
-}*/
-
-
-
-
-.popular {
-  position: static;
+.popular-background {
+  display: flex;
   background-color: var(--grey-die);
   margin-top: 59px;
-  width: 940px;
-  height: 89px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.popular {
+  display: inline-block;
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase;
   font-family: var(--second-font);
+  text-transform: uppercase;
+  padding-top: 29px;
+  padding-bottom: 30px;
   color: var(--special-grey);
 }
 
-.popular-product {
-  position: absolute;
-  margin-left: 28px;
-  margin-top: 29px;
-}
-
+.all-popular-manufacturers,
 .all-popular {
-  position: absolute;
+  display: inline-block;
   width: 192px;
   height: 38px;
-  font-size: 14px;
-  line-height: 18px;
   background-color: var(--basic-red);
   color: var(--white);
   text-transform: uppercase;
-  margin-left: 734px;
+  line-height: 18px;
+  text-align: center;
   margin-top: 25px;
+  padding-top: 11px;
+  font-family: var(--second-font);
 }
 
-.all-popular-text {
-  position: absolute;
-  margin-left: 24px;
-  margin-top: 11px;
+.all-popular {
+    margin-left: 425px;
 }
 
-.catalog-main {
+.all-popular-manufacturers{
+  margin-left: 310px;
+}
+
+.popular-catalog ul {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
   justify-content: space-between;
-  background-color: var(--white);
-  margin-top: 20px;
+  margin-bottom: 70px;
 }
-
-/*Popular manufacturers*/
 
 .manufacturers {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   justify-content: space-between;
   background-color: var(--white);
   padding-bottom: 50px;
 }
 
-.manufacturers li {
-  width: 220px;
-  height: 145px;
+
+.manufacturers-logo {
+  display: block;
+  background-repeat: no-repeat;
+  width: 218px;
+  height: 143px;
   border: 1px solid var(--special-greylight);
   text-align: center;
   background-color: var(--white);
@@ -687,15 +659,45 @@ button {
 }
 
 
+.bosch {
+  background-image: url("../img/bosch.jpg");
+  background-position: top 54px left 47px;
+}
 
+.makita {
+  background-image: url("../img/makita.jpg");
+  background-position: top 50px left 48px;
+}
 
+.dewalt {
+  background-image: url("../img/dewalt.jpg");
+  background-position: top 48px left 37px;
+}
 
+.interscol {
+  background-image: url("../img/interscol.jpg");
+  background-position: top 21px left 9px;
+}
 
+.hitachi {
+  background-image: url("../img/hitachi.jpg");
+  background-position: top 58px left 28px;
+}
 
+.lg {
+  background-image: url("../img/lg.jpg");
+  background-position: top 35px left 48px;
+}
 
+.aeg {
+  background-image: url("../img/aeg.jpg");
+  background-position: top 23px left 35px;
+}
 
-
-
+.metabo {
+  background-image: url("../img/metabo.jpg");
+  background-position: top 34px left 10px;
+}
 
 
 
