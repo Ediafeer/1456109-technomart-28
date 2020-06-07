@@ -112,7 +112,7 @@ button {
 
 .logo-background {
   display: inline-flex;
-  width: 220px;
+  min-width: 220px;
   height: 47px;
   background-color: var(--basic-red);
   margin-bottom: -5px;
@@ -131,18 +131,18 @@ button {
 }
 
 
-ul.list.navigation-link{
-  display: flex;
-  flex-wrap: wrap;
+.navigation-link li {
+  display: inline-flex;
 }
 
 
 .search {
   display: block;
-  width: 271px;
+  max-width: 271px;
   height: 42px;
   color: var(--white);
   background-color: var(--special-grey);
+  border: none;
 }
 
 .navigation-link input {
@@ -369,27 +369,11 @@ ul.list.navigation-link{
 }
 
 .enter:hover::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 17px;
-  top: 14px;
-  left: 19px;
   background-image: url("../img/icon-login-grey.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .enter:active::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 17px;
-  top: 14px;
-  left: 19px;
   background-image: url("../img/icon-login-in.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 /*Main menu*/
