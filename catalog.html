@@ -1,39 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Техномарт. Каталог.</title>
+    <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <a class="logo" href="index.html">
-        <img src="img/logo-technomart.png" width="100" height="50" alt="Логотип интернет-магазина Техномарт">
-      </a>
-      <span>Поиск</span>
-      <input type="search" name="search" id="search" aria-label="Поиск">
-      <a href="blank.html">Закладки</a>
-      <a href="blank.html">Корзина</a>
-      <a href="blank.html">Оформить заказ</a>
-      <span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <span>Равшан Джамшутович</span>
-      <a href="blank.html">Мои заказы</a>
-      <a href="blank.html">Личный кабинет</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-      </nav>
+  <body class="page-body">
+    <header class="header">
+      <div class="navigation-background-top">
+          <div class="header-navigation container">
+              <a class="logo-background"><img class="logo-header" src="img/logo-technomart.png" width="108" height="18" alt="Логотип интернет-магазина Техномарт"></a>
+              <ul class="navigation-link list">
+                <li class="width-search"><input class="search" type="search" name="search" id="search" aria-label="Поиск" placeholder="Поиск:"></li>
+                <li class="bookmarks"><a class="bookmarks-link" href="blank.html">Закладки: 0</a></li>
+                <li class="basket"><a class="basket-link" href="blank.html">Корзина: 0</a></li>
+                <li class="order" ><a class="order-link" href="blank.html">Оформить заказ</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-contact container">
+        <p class="activity">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div>
+          <div class="telephone-frame">
+            <a class="telephone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
+          <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        </div>
+        <div class="user-navigation">
+          <div class="enter-button">
+            <a class="enter" href="blank.html">Войти</a>
+          </div>
+          <div class="registration-button">
+            <a class="registration" href="blank.html">Регистрация</a>
+          </div>
+        </div>
+     </div>
+      <div class="container">
+        <nav class="navigation">
+          <ul class="site-navigation list">
+            <li class="main-page"><a href="index.html">Главная</a></li>
+            <li><a href="blank.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="blank.html">Спецпредложения</a></li>
+            <li><a href="blank.html">Доставка</a></li>
+            <li class="contact-page"><a href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
         <section>

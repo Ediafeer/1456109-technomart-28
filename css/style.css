@@ -625,7 +625,7 @@ button {
 }
 
 .all-popular {
-    margin-left: 425px;
+    margin-left: 420px;
 }
 
 .all-popular-manufacturers{
@@ -702,9 +702,76 @@ button {
 
 
 
+/*About company*/
 
+.company-background {
+  background-color: var(--white);
+}
 
+.about-company {
+  display: flex;
+  justify-content: space-between;
+}
 
+.company {
+  margin: 0;
+  font-family: var(--second-font);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-top: 70px;
+}
+
+.company-text {
+  margin: 0;
+  width: 478px;
+
+  font-size: 13px;
+  padding-top: 24px;
+}
+
+.company-slogan {
+  margin: 0em;
+  width: 440px;
+  padding-top: 24px;
+  font-size: 13px;
+}
+
+.transport li::before {
+  content: "\2015";
+  color: var(--basic-red);
+  padding-right: 12px;
+
+}
+
+.transport li {
+  font-size: 18px;
+  font-family: var(--second-font);
+}
+
+.company-button {
+  display: block;
+  width: 220px;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  background-color: var(--basic-red);
+  font-family: var(--second-font);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.map-text {
+  width: 180px;
+  font-size: 13px;
+}
+
+.map-button {
+  width: 300px;
+}
 
 
 /*Footer navigation*/
