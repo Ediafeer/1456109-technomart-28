@@ -95,7 +95,7 @@ button {
 /*Container*/
 
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -118,8 +118,12 @@ button {
   min-width: 220px;
   height: 47px;
   background-color: var(--basic-red);
-  margin-bottom: -5px;
+
   box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
+}
+
+.indent {
+  margin-bottom: -5px;
 }
 
 .logo-header {
@@ -140,7 +144,7 @@ button {
 
 
 .search {
-  width: 271px;
+  max-width: 271px;
   height: 42px;
   color: var(--white);
   background-color: var(--special-grey);
@@ -149,6 +153,7 @@ button {
 
 .navigation-link input {
   padding-left: 42px;
+  width: 264px;
 }
 
 .search::placeholder {
@@ -160,8 +165,8 @@ button {
 }
 
 .navigation-link a {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 11px;
+  padding-bottom: 10px;
   color: inherit;
 }
 
@@ -179,10 +184,15 @@ button {
   padding-right: 5px;
 }
 
+.basket,
+.bookmarks {
+  width: 150px;
+}
+
 .order a {
   width: 150px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--basic-green);
 }
 
@@ -212,7 +222,8 @@ button {
 .enter,
 .search,
 .telephone,
-.manufacturers-logo {
+.manufacturers-logo,
+.button-circle {
   position: relative;
 }
 
@@ -258,9 +269,11 @@ button {
 .header-contact{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 45px;
 }
 
 .activity {
+  margin: 0;
   padding-left: 30px;
   color: var(--basic-red);
   font-size: 16px;
@@ -268,7 +281,7 @@ button {
   line-height: 23px;
   margin-top: 38px;
   font-family: var(--second-font);
-  padding-right: 30px;
+  width: 222px;
 }
 
 .telephone {
@@ -305,6 +318,10 @@ button {
   font-family: var(--second-font);
   color: var(--special-grey);
   font-style: normal;
+  width: auto;
+  padding-left: 8px;
+  padding-right: 54px;
+  max-width: 320px;
 }
 
 .user-navigation{
@@ -313,13 +330,11 @@ button {
 }
 .enter-button {
   margin-top: 41px;
-  margin-bottom: 67px;
   margin-left: 25px;
 }
 
 .registration-button {
   margin-top: 41px;
-  margin-bottom: 67px;
   margin-left: 10px;
   box-sizing: border-box;
 }
@@ -388,7 +403,6 @@ button {
   color: var(--white);
   font-size: 18px;
   background-color: var(--special-grey);
-  height: 60px;
   box-shadow: inset 0px -5px 0px var(--guidance-grey);
 }
 
@@ -489,6 +503,7 @@ button {
   color: var(--white);
   padding-top: 20px;
   padding-left: 22px;
+  line-height: 30px;
 }
 
 .materials-link,
@@ -527,6 +542,7 @@ button {
 }
 
 .slider {
+  position: relative;
   width: auto;
   min-height: 266px;
   background-image: url("../img/layer99.png");
@@ -571,6 +587,29 @@ button {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.button-circle {
+  position: absolute;
+  bottom: 35px;
+  left: 295px;
+  z-index: 20;
+  display: flex;
+  width: 30px;
+  justify-content: space-between;
+}
+
+.button-circle button {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--white);
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-circle .current {
+  background-color: var(--basic-red);
+}
 
 .button-open-catalog {
   display: inline-block;
@@ -625,11 +664,11 @@ button {
 }
 
 .all-popular {
-    margin-left: 420px;
+    margin-left: 435px;
 }
 
 .all-popular-manufacturers{
-  margin-left: 310px;
+  margin-left: 325px;
 }
 
 .popular-catalog ul {
@@ -775,7 +814,37 @@ button {
 
 
 /*Footer navigation*/
-.footer-all-menu {
+
+.footer-navigation-background {
+  background-color: var(--special-grey);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.footer-all-menu {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -857,7 +926,7 @@ button {
 
 .social a {
   color: var(--white);
-}
+}*/
 
 
 
