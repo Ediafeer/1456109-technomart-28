@@ -733,6 +733,108 @@ padding-top: 23px;
  padding-top: 34px;
 }
 
+/*Service*/
+
+.service-background {
+  background-color: var(--basic-background);
+}
+
+.service-header {
+  padding-top: 64px;
+}
+
+.delivery-header,
+.service-header {
+  margin: 0;
+  display: flex;
+  font-family: var(--second-font);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service-text {
+  width: 396px;
+  font-size: 13px;
+}
+
+.service-button {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 99px;
+  width: 240px;
+  position: relative;
+
+}
+
+.delivery-button,
+.guarantee-button,
+.credit-button {
+  display: inline-block;
+  margin: 0;
+  min-width: 240px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin-right: 80px;
+  background-color: var(--special-grey);
+  color: var(--white);
+  font-family: var(--second-font);
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  box-shadow: 0px 1px 0px var(--guidance-grey), inset 0px 1px 0px #405069;
+}
+
+.delivery-button:hover,
+.guarantee-button:hover,
+.credit-button:hover {
+  background-color: var(--guidance-grey);
+  box-shadow: 0px 1px 0px var(--guidance-grey), inset 0px 1px 0px #405069;
+}
+
+.delivery-button:active,
+.guarantee-button:active,
+.credit-button:active {
+  background-color: var(--white);
+  color: var(--special-grey);
+}
+
+.delivery-button:focus,
+.guarantee-button:focus,
+.credit-button:focus {
+  background-color: var(--white);
+  color: var(--special-grey);
+}
+
+.delivery-text {
+  display: block;
+  width: 274px;
+  font-size: 13px;
+}
+
+.delivery-header {
+  color: var(--special-grey);
+}
+
+.shadow {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  left: 230px;
+  top: 25px;
+}
+
+.delivery-service {
+  position: relative;
+  background-image: url("../img/delivery.png");
+  background-repeat: no-repeat;
+  min-width: 619px;
+  background-position-x: 151px;
+}
+
 /*About company*/
 
 .company-background {
