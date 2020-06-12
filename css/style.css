@@ -1073,9 +1073,6 @@ padding-top: 23px;
 }
 
 
-/*Это не проверять*/
-
-
 /*Catalog*/
 
 .bread-crumb {
@@ -1247,21 +1244,6 @@ padding-top: 23px;
   margin-bottom: 46px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .sort {
   display: inline-flex;
   min-width: 700px;
@@ -1284,8 +1266,6 @@ padding-top: 23px;
 
 }
 
-
-
 .triangle-top::before {
   content: "";
   position: absolute;
@@ -1305,16 +1285,6 @@ padding-top: 23px;
   height: 10px;
   background-image: url("../img/triangle.svg");
 }
-
-
-
-
-
-
-
-
-
-
 
 
 .catalog {
