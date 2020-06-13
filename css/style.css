@@ -1286,16 +1286,13 @@ padding-top: 23px;
   background-image: url("../img/triangle.svg");
 }
 
-
 .catalog {
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 18px;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 48px;
 
 }
-
 
 .catalog li {
   display: inline-block;
@@ -1304,6 +1301,25 @@ padding-top: 23px;
   text-align: center;
   background-color: var(--white);
   position: relative;
+  overflow: hidden;
+}
+
+.new::before {
+  content: "new";
+  position: absolute;
+  z-index: 2;
+  font-family: var(--second-font);
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: var(--basic-red);
+  color: var(--white);
+  transform: rotateZ(45deg);
+  right: -25px;
+  top: 10px
 }
 
 .hover-card {
@@ -1317,7 +1333,11 @@ padding-top: 23px;
   top: 0;
   left: 0;
   background-color: var(--white);
-  z-index: 0;
+  z-index: -1;
+}
+
+.hover-card:hover {
+  z-index: 1;
 }
 
 .buy,
@@ -1399,32 +1419,52 @@ padding-top: 23px;
  margin: auto;
 }
 
-.catalog .price {
+.price {
+  margin: 0;
+  display: inline-block;
   width: 141px;
-  height: 38px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
   background-color: var(--basic-red);
-  border: 0px;
   color: var(--white);
-  margin-bottom: 10px;
-  margin-left: 32px;
-  margin-right: 44px;
-  margin-top: 10px;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 39px;
+  position: relative;
 }
+
+
+.square::before, .square::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 43px;
+  background-color: var(--white);
+  transform: rotateZ(45deg);
+  right: -5px;
+  top: 10px
+}
+
+.square::after {
+  transform: rotateZ(-45deg);
+  right: -5px;
+  top: -15px;
+}
+
 
 .catalog del {
   color: var(--grey);
+  display: inline-block;
   max-width: 172px;
 }
 
 .catalog li:hover {
   box-shadow: 0 0 5px var(--grey);
 }
-
-
-
-
-
 
 
 .about-perforators {
