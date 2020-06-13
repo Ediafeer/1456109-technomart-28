@@ -1483,3 +1483,46 @@ padding-top: 23px;
   padding-bottom: 68px;
   width: 907px;
 }
+
+
+.switching-buttons {
+  padding-top: 48px;
+  padding-bottom: 59px;
+}
+
+.switching-buttons-number,
+.switching-buttons-next {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  background-color: var(--white);
+  border: 1px solid #E5E5E5;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.switching-buttons-next {
+  padding-left: 32px;
+  padding-right: 31px;
+}
+
+.switching-buttons-number:hover,
+.switching-buttons-next:hover {
+  border: 1px solid var(--basic-graylight);
+}
+
+.switching-buttons-number:active,
+.switching-buttons-next:active {
+  border: 1px solid var(--basic-red);
+}
+
+.switching-buttons-number:focus,
+.switching-buttons-next:focus {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
