@@ -292,28 +292,34 @@
           </div>
         </div>
     </footer>
-    <section>
-      <h2 class="visually-hidden">Написать нам</h2>
-      <form action="https://echo.htmlacademy.ru/" method="POST">
-        <p>
-          <input type="text" id="ap-name" name="name" placeholder="Имя Фамилия" required>
-          <label for="ap-name">Ваше имя:</label>
-        </p>
-        <p>
-          <input type="email" name="email" id="ap-email" placeholder="email@example.com" required>
-          <label for="ap-email">Ваш e-mail:</label>
-        </p>
-        <p>
-          <input type="text" name="text" id="ap-text" placeholder="В свободной форме" required>
-          <label for="ap-text">Текст письма:</label>
-        </p>
-        <button type="submit">Оформить заказ</button>
-      </form>
-      <button type="button">Закрыть</button>
+    <section class="modal modal-feedback">
+        <h2 class="visually-hidden">Написать нам</h2>
+        <form action="https://echo.htmlacademy.ru/" method="POST">
+          <div class="feedback-form">
+            <p>
+              <label class="your-name" for="ap-name">Ваше имя:</label>
+              <input class="your-name-input" type="text" id="ap-name" name="name" placeholder="Имя Фамилия" required>
+            </p>
+            <p>
+              <label class="ap-email" for="ap-email">Ваш e-mail:</label>
+              <input class="ap-email-input" type="email" name="email" id="ap-email" placeholder="email@example.com" required>
+            </p>
+            <p>
+              <label class="ap-text" for="ap-text">Текст письма:</label>
+              <input class="ap-text-input" type="text" name="text" id="ap-text" placeholder="В свободной форме" required>
+            </p>
+          </div>
+          <div class="modal-background">
+            <button type="submit">Отправить</button>
+          </div>
+        </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-    <section>
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button type="button">Закрыть</button>
+      <img src="/img/map-popup.png" width="943px" height="449px" alt="Офис компании по 
+      адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>

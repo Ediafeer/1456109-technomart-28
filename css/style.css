@@ -1555,3 +1555,160 @@ padding-top: 35px;
   color: var(--white);
 }
 
+/*Modal*/
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*Modal close*/
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-red);
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+/*Modal map*/
+
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 449px;
+  border-top: 7px solid var(--basic-red);
+}
+
+.modal-map img {
+  display: block;
+}
+
+/*Modal feedback*/
+
+.feedback-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*.feedback-form input[type="email"],
+.feedback-form input[type="text"] {
+  width: 220px;
+  padding-top: 7px;
+  padding-right: 12px;
+  font-size: 13px;
+  color:var(--grey);
+  background-color: var(--white);
+}*/
+
+.modal-feedback {
+  display: block;
+  width: 620px;
+  height: 430px;
+  background-color: var(--white);
+  border-top: 7px solid var(--basic-red);
+}
+
+.feedback-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 81px;
+  padding-top: 46px;
+}
+
+.feedback-form p {
+  display: inline-grid;
+  flex-wrap: wrap;
+}
+
+.your-name,
+.ap-email,
+.ap-text {
+  display: inline-block;
+  font-family: var(--second-font);
+  font-size: 18px;
+}
+
+.ap-text {
+  margin-bottom: 11px;
+}
+
+.your-name-input,
+.ap-email-input,
+.ap-text-input {
+  display: inline-block;
+  font-family: var(--base-font);
+  width: 220px;
+  margin-right: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  border: 2px solid var(--basic-graylight);
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.your-name-input::placeholder,
+.ap-email-input::placeholder,
+.ap-text-input::placeholder {
+  color: var(--grey);
+}
+
+.ap-text-input {
+  width: 460px;
+  height: 114px;
+  padding-bottom: 80px;
+  margin-bottom: 37px;
+}
+
+.modal-background {
+  width: 100%;
+  padding-top: 37px;
+  padding-left: 80px;
+  background-color:#f4f4f4;
+}
+
+.modal-background button {
+  width: 460px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-family: var(--second-font);
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--white);
+  margin-bottom: 46px;
+}
