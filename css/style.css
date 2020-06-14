@@ -1624,18 +1624,8 @@ padding-top: 35px;
   margin-bottom: 10px;
 }
 
-/*.feedback-form input[type="email"],
-.feedback-form input[type="text"] {
-  width: 220px;
-  padding-top: 7px;
-  padding-right: 12px;
-  font-size: 13px;
-  color:var(--grey);
-  background-color: var(--white);
-}*/
-
 .modal-feedback {
-  display: block;
+  display: none;
   width: 620px;
   height: 430px;
   background-color: var(--white);
