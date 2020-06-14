@@ -737,7 +737,7 @@ button {
 }
 
 .hitachi {
- padding-top: 58px;
+  padding-top: 58px;
 }
 
 .lg {
@@ -745,11 +745,11 @@ padding-top: 35px;
 }
 
 .aeg {
-padding-top: 23px;
+  padding-top: 23px;
 }
 
 .metabo {
- padding-top: 34px;
+  padding-top: 34px;
 }
 
 /*Service*/
@@ -995,7 +995,7 @@ padding-top: 23px;
   width: 100%;
   padding-top: 22px;
   padding-right: 74px;
-
+  padding-bottom: 54px;
 }
 
 .address-footer-text {
@@ -1013,6 +1013,8 @@ padding-top: 23px;
 .footer-link {
   display: flex;
   width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .footer-link p {
@@ -1042,8 +1044,26 @@ padding-top: 23px;
   font-style: normal;
 }
 
+.social {
+  display: flex;
+  width: 132px;
+  margin-right: 118px;
+  align-items: center;
+}
+
 .social a {
-  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #212A3A, #212A3A);
+}
+
+.social a:hover,
+.social a:active {
+  background: var(--basic-red);
 }
 
 .footer-navigation a:hover {
@@ -1056,20 +1076,29 @@ padding-top: 23px;
 
 .mail {
   width: 137px;
-  margin: auto;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 51px;
+}
+
+.developer a:active,
+.mail a:active {
+  color: var(--basic-red);
 }
 
 .developer {
   width: 98px;
   margin: auto;
-}
-
-.social {
-  margin: auto;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .сopyright {
-  width: 219px;
+  display: inline-block;
+  width: 227px;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 161px;
 }
 
 
