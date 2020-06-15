@@ -181,11 +181,13 @@ button {
   position: relative;
 }
 
-button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  font-size: 16px;
-  color: #F9F0DA;
+.width-search::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 12px;
+  background-image: url("../img/icon-search.svg");
 }
 
 
@@ -194,6 +196,10 @@ button:before {
   line-height: 24px;
   font-family: var(--second-font);
   color: var(--white);
+}
+
+.red-background {
+  background-color: var(--basic-red);
 }
 
 .basket a,
@@ -252,7 +258,8 @@ button:before {
 .bread-crumb-tool,
 .bread-crumb-perforators,
 .triangle-top,
-.triangle-buttom {
+.triangle-buttom,
+.name {
   position: relative;
 }
 
@@ -355,20 +362,86 @@ button:before {
 
 .user-navigation{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .enter-button {
   margin-top: 41px;
   margin-left: 25px;
+  width: 128px;
 }
 
 .registration-button {
   margin-top: 41px;
   margin-left: 10px;
-  box-sizing: border-box;
 }
 
+.name-button {
+  margin-top: 41px;
+  margin-left: 14px;
+  position: relative;
+}
 
+.name::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 13px;
+  left: 18px;
+  background-image: url("../img/icon-user.svg");
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  top: 14px;
+  right: 17px;
+  background-image: url("../img/icon-login-out.svg");
+
+}
+
+.name:hover::before{
+  background-image: url("../img/login-in-grey.svg");
+}
+.name:hover::after {
+  background-image: url("../img/login-out-grey.svg");
+}
+
+.name:active:before{
+  background-image: url("../img/login-in-click.svg");
+}
+.name:active::after {
+  background-image: url("../img/login-out-click.svg");
+}
+
+.my-order,
+.my-office {
+  font-family: var(--second-font);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.my-order {
+  padding-top: 7px;
+  padding-left: 60px;
+  position: relative;
+}
+
+.my-office {
+  padding-top: 7px;
+  padding-left: 11px;
+}
+
+.circle {
+  padding-top: 6px;
+  padding-left:11px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.name-button a,
 .registration-button a,
 .enter-button a {
   display: block;
@@ -381,6 +454,12 @@ button:before {
   background-color: var(--white);
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.name-button a {
+  width: 299px;
+  padding-left: 56px;
+  padding-right: 57px;
 }
 
 .enter-button a {
@@ -1188,7 +1267,7 @@ padding-top: 35px;
 
 
 .catalog-section {
- display: inline-flex;
+  display: inline-flex;
 }
 
 .filter-text {
@@ -1288,7 +1367,7 @@ padding-top: 35px;
 }
 
 .sort {
-  display: inline-flex;
+  display: flex;
   min-width: 700px;
   margin-bottom: 28px;
   font-size: 13px;
@@ -1300,34 +1379,50 @@ padding-top: 35px;
   padding-left: 19px;
 }
 
-.sort-text {
-  padding-right: 120px;
-}
-
 .sort-filter {
   display: flex;
-
+  margin-left: 140px;
+  width: 420px; 
+  justify-content: space-around;
 }
 
-.triangle-top::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 0px;
-  width: 11px;
-  height: 10px;
-  background-image: url("../img/icon-down-dir.svg");
+.triangle a,
+.sort-link {
+  color: var(--basic-text);
+  opacity: 0.3;
 }
 
-.triangle-buttom::before {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 0px;
-  width: 11px;
-  height: 10px;
-  background-image: url("../img/triangle.svg");
+.sort-link {
+  border-bottom: 1px dotted var(--basic-red);
 }
+
+.sort-link:hover {
+  border-bottom: 1px solid var(--basic-red);
+  opacity: 1;
+}
+
+.triangle a:hover {
+  opacity: 1;
+}
+
+.active-sort {
+  color: var(--basic-red);
+  border: none;
+  opacity: 1;
+}
+
+.active-sort:hover {
+  color: var(--basic-red);
+  border: none;
+  opacity: 1;
+}
+
+
+
+
+
+
+
 
 .catalog {
   display: grid;
