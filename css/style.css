@@ -143,8 +143,17 @@ button {
   display: flex;
 }
 
-.navigation-link li {
-  display: inline-block;
+.navigation-link {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.navigation-link a {
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  color: inherit;
 }
 
 .search {
@@ -154,11 +163,13 @@ button {
   color: var(--white);
   background-color: var(--special-grey);
   border: none;
+
 }
 
 .navigation-link input {
   padding-left: 42px;
-  width: 264px;
+  width: 271px;
+  max-width: 100%;
 }
 
 .search::placeholder {
@@ -167,13 +178,16 @@ button {
 
 .width-search {
   flex-grow: 1;
+  position: relative;
 }
 
-.navigation-link a {
-  padding-top: 11px;
-  padding-bottom: 10px;
-  color: inherit;
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
 }
+
 
 .navigation-link li {
   font-size: 18px;
