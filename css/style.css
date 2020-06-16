@@ -657,6 +657,9 @@ button {
   padding-left: 24px;
 }
 
+
+
+
 .title-slide {
   margin: 0;
   font-size: 36px;
@@ -856,7 +859,9 @@ padding-top: 35px;
 }
 
 .delivery-header,
-.service-header {
+.service-header,
+.guarantee-header,
+.credit-header {
   margin: 0;
   display: flex;
   font-family: var(--second-font);
@@ -882,11 +887,12 @@ padding-top: 35px;
 .delivery-button,
 .guarantee-button,
 .credit-button {
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
   min-width: 240px;
   padding-top: 14px;
   padding-bottom: 17px;
+  padding-left: 22px;
   margin-right: 80px;
   background-color: var(--special-grey);
   color: var(--white);
@@ -897,34 +903,36 @@ padding-top: 35px;
   box-shadow: 0px 1px 0px var(--guidance-grey), inset 0px 1px 0px #405069;
 }
 
+
 .delivery-button:hover,
 .guarantee-button:hover,
 .credit-button:hover {
   background-color: var(--guidance-grey);
+  color: var(--white);
   box-shadow: 0px 1px 0px var(--guidance-grey), inset 0px 1px 0px #405069;
 }
 
-.delivery-button:active,
-.guarantee-button:active,
-.credit-button:active {
+.active-service-button {
   background-color: var(--white);
   color: var(--special-grey);
+  box-shadow: none;
 }
 
-.delivery-button:focus,
-.guarantee-button:focus,
-.credit-button:focus {
-  background-color: var(--white);
-  color: var(--special-grey);
-}
-
-.delivery-text {
+.delivery-text,
+.guarantee-text,
+.credit-text {
   display: block;
   width: 274px;
   font-size: 13px;
 }
 
-.delivery-header {
+.guarantee-text {
+  width: 319px;
+}
+
+.delivery-header,
+.guarantee-header,
+.credit-header {
   color: var(--special-grey);
 }
 
@@ -945,6 +953,38 @@ padding-top: 35px;
   background-repeat: no-repeat;
   min-width: 619px;
   background-position-x: 151px;
+}
+
+.guarantee-service {
+  position: relative;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  min-width: 619px;
+  background-position-x: 220px;
+}
+
+.credit-service {
+  position: relative;
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+  min-width: 619px;
+  height: 185px;
+  background-position-x: 154px;
+}
+
+.service-hidden {
+  display: none;
+}
+
+.button-application {
+  font-family: var(--second-font);
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--basic-red);
+  width: 195px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*About company*/
