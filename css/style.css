@@ -2004,3 +2004,60 @@ padding-top: 35px;
   color: var(--white);
   margin-bottom: 46px;
 }
+
+.modal-basket {
+  display: none;
+  width: 620px;
+  height: 282px;
+  z-index: 5;
+  background-color: var(--white);
+  border-top: 7px solid var(--basic-red);
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position-x: 81px;
+  background-position-y: 55px;
+}
+
+.notification-text {
+  margin: 0;
+  padding: 0;
+  font-family: var(--second-font);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-top: 73px;
+  text-align: center;
+  padding-bottom: 67px;
+}
+
+.modal-background-catalog {
+  background-color: #f1f1f1;
+  height: 112px;
+  padding-left: 114px;
+  padding-top: 37px;
+}
+
+.place-order {
+  display: inline-block;
+  font-family: var(--second-font);
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--white);
+  text-align: center;
+  width: 192px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  margin-right: 10px;
+}
+
+.resume {
+  width: 192px;
+  background-color: var(--white);
+  font-family: var(--second-font);
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-text);
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
