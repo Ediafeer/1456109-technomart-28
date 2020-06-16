@@ -653,12 +653,28 @@ button {
   position: relative;
   width: auto;
   min-height: 266px;
-  background-image: url("../img/layer99.png");
   padding-left: 24px;
 }
 
+.slide {
+  display: none;
+}
 
+.perforators-slide {
+  display: block;
+}
 
+.drill-slide {
+  display: none;
+}
+
+.site-wrapper-1 {
+  background-image: url("../img/layer99.png");
+}
+
+.site-wrapper-2 {
+  background-image: url("../img/layer100.png");
+}
 
 .title-slide {
   margin: 0;
@@ -686,16 +702,27 @@ button {
 
 .button-right {
   background-image: url("../img/icon-right.svg");
-  margin-left: 520px;
 }
 
 .button-left,
 .button-right {
-  margin-top: 34px;
+  position: absolute;
+  background-color: transparent;
+  z-index: 20;
+  display: flex;
   width: 22px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0);
+  justify-content: space-between;
+}
+
+.button-left {
+  left: 24px;
+  bottom: 104px;
+}
+
+.button-right {
+  right: 20px;
+  bottom: 104px
 }
 
 .button-circle {
@@ -732,7 +759,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   padding-top: 11px;
-  margin-top: 39px;
+  margin-top: 97px;
 }
 
 .button-open-catalog:focus {
