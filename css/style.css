@@ -551,6 +551,8 @@ button {
 .materials {
   grid-column: 1;
   display: block;
+  position: relative;
+  overflow: hidden;
   background-color: var(--special-yellow);
   background-image: url("../img/icon-materials.svg");
   background-repeat: no-repeat;
@@ -1619,7 +1621,9 @@ padding-top: 35px;
   position: absolute;
   z-index: 2;
   font-family: var(--second-font);
+  font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   display: inline-block;
   width: 100px;
