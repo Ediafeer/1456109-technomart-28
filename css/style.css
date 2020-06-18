@@ -113,8 +113,7 @@ button {
   margin-bottom: 59px;
 }
 
-/*Navigation header*/
-/*Logo header*/
+/*Header first level*/
 
 .navigation-background-top{
   background-color: var(--special-grey);
@@ -190,7 +189,6 @@ button {
   background-image: url("../img/icon-search.svg");
 }
 
-
 .navigation-link li {
   font-size: 18px;
   line-height: 24px;
@@ -224,8 +222,6 @@ button {
   padding-right: 15px;
   background-color: var(--basic-green);
 }
-
-/*icon header*/
 
 .bookmarks-link::before {
   content: "";
@@ -274,13 +270,9 @@ button {
   opacity: 0.3;
 }
 
-
-/*hover and click*/
-
 .order a:hover {
   background-color: var(--success);
 }
-
 
 .bookmarks-link:hover::before,
 .basket-link:hover::before {
@@ -300,7 +292,7 @@ button {
   color: var(--basic-text);
 }
 
-                               /* Header 2-й Уровень  */
+/* Header second level*/
 
 .header-contact{
   display: grid;
@@ -317,7 +309,7 @@ button {
   line-height: 23px;
   margin-top: 38px;
   font-family: var(--second-font);
-  width: 222px;
+  width: 230px;
 }
 
 .telephone {
@@ -496,13 +488,12 @@ button {
   background-image: url("../img/icon-login-in.svg");
 }
 
-/*Main menu*/
+/*Header third level (main menu)*/
 
 .site-navigation li {
   flex-grow: 1;
   text-align: center;
 }
-
 
 .navigation ul {
   display: flex;
@@ -536,8 +527,9 @@ button {
 .site-navigation a:active {
   opacity: 0.5;
 }
-                               /*Main content*/
-                               /*Advertising*/
+
+/*Main content*/
+/*Advertising section*/
 
 .white-background {
   background-color: var(--white);
@@ -550,7 +542,6 @@ button {
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 59px;
   font-family: var(--second-font);
-
 }
 
 .materials {
@@ -648,6 +639,8 @@ button {
 .delivery-link:focus {
   background: rgba(169, 169, 169, 0.3);
 }
+
+/*Slider*/
 
 .slider {
   position: relative;
@@ -766,6 +759,8 @@ button {
   background-color: var(--error);
 }
 
+/*Section popular products & manufacturers*/
+
 .popular-background {
   display: flex;
   background-color: var(--grey-die);
@@ -875,7 +870,7 @@ padding-top: 35px;
   padding-top: 34px;
 }
 
-/*Service*/
+/*Service section*/
 
 .service-background {
   background-color: var(--basic-background);
@@ -908,7 +903,6 @@ padding-top: 35px;
   padding-bottom: 99px;
   width: 240px;
   position: relative;
-
 }
 
 .delivery-button,
@@ -929,7 +923,6 @@ padding-top: 35px;
   font-weight: bold;
   box-shadow: 0px 1px 0px var(--guidance-grey), inset 0px 1px 0px #405069;
 }
-
 
 .delivery-button:hover,
 .guarantee-button:hover,
@@ -1014,7 +1007,7 @@ padding-top: 35px;
   padding-bottom: 10px;
 }
 
-/*About company*/
+/*Section about the company*/
 
 .company-background {
   background-color: var(--white);
@@ -1038,7 +1031,6 @@ padding-top: 35px;
 .company-text {
   margin: 0;
   width: 478px;
-
   font-size: 13px;
   padding-top: 24px;
 }
@@ -1085,12 +1077,11 @@ padding-top: 35px;
   width: 300px;
 }
 
-/*Footer navigation*/
+/*Footer*/
 
 .footer-navigation-background {
   background-color: var(--special-grey);
 }
-
 
 .logo-background-footer {
   display: flex;
@@ -1107,7 +1098,6 @@ padding-top: 35px;
   margin-right: 41px;
   margin-bottom: 25px;
 }
-
 
 .footer-navigation {
   display: flex;
@@ -1261,8 +1251,9 @@ padding-top: 35px;
   margin-right: 161px;
 }
 
-
-/*Catalog*/
+/*Catalog page*/
+/*Main content*/
+/*Bread crumb*/
 
 .bread-crumb {
   display: flex;
@@ -1321,6 +1312,8 @@ padding-top: 35px;
   background-image: url("../img/icon-right-small.svg");
 }
 
+/*Background catalog*/
+
 .perforators-background {
   display: flex;
   background-color: var(--header-gray);
@@ -1329,13 +1322,11 @@ padding-top: 35px;
   margin-bottom: 20px;
 }
 
-
-
-
-
 .catalog-section {
   display: inline-flex;
 }
+
+/*Filtr*/
 
 .filter-text {
   margin: 0;
@@ -1363,7 +1354,6 @@ padding-top: 35px;
 .filter-line {
   padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
-
 }
 
 .filter-item legend {
@@ -1409,8 +1399,6 @@ padding-top: 35px;
   cursor: pointer;
 }
 
-
-
 .range-controls .toggle-min {
   left: 18px;
 }
@@ -1423,7 +1411,6 @@ padding-top: 35px;
   display: flex;
   justify-content: space-between;
 }
-
 
 .price-controls input {
   width: 95px;
@@ -1548,9 +1535,7 @@ padding-top: 35px;
   border: 1px solid #e5e5e5;
 }
 
-
-
-
+/*Sorting of goods*/
 
 .filter-manufacturers {
   margin-top: 17px;
@@ -1608,19 +1593,13 @@ padding-top: 35px;
   opacity: 1;
 }
 
-
-
-
-
-
-
+/*Product cards*/
 
 .catalog {
   display: grid;
   grid-column-gap: 20px;
   grid-row-gap: 18px;
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .work-card {
@@ -1723,7 +1702,6 @@ padding-top: 35px;
   opacity: 0.5;
 }
 
-
 .card-name {
   text-align: center;
 }
@@ -1737,7 +1715,6 @@ padding-top: 35px;
   max-height: 60px;
   overflow: hidden;
   display: inline-block;
-
 }
 
 .container-img {
@@ -1767,7 +1744,6 @@ padding-top: 35px;
   position: relative;
 }
 
-
 .square::before, .square::after {
   content: "";
   position: absolute;
@@ -1786,7 +1762,6 @@ padding-top: 35px;
   top: -15px;
 }
 
-
 .catalog del {
   color: var(--grey);
   display: inline-block;
@@ -1797,24 +1772,7 @@ padding-top: 35px;
   box-shadow: 0 0 5px var(--grey);
 }
 
-
-.about-perforators {
-  margin: 0;
-  font-family: var(--second-font);
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-top: 64px;
-}
-
-.about-perforators-text {
-  margin: 0;
-  font-size: 13px;
-  padding-top: 25px;
-  padding-bottom: 68px;
-  width: 907px;
-}
-
+/*Page switching buttons*/
 
 .switching-buttons {
   padding-top: 48px;
@@ -1855,6 +1813,25 @@ padding-top: 35px;
 .switching-buttons-next:focus {
   background-color: var(--basic-red);
   color: var(--white);
+}
+
+/*Section about perforators*/
+
+.about-perforators {
+  margin: 0;
+  font-family: var(--second-font);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 64px;
+}
+
+.about-perforators-text {
+  margin: 0;
+  font-size: 13px;
+  padding-top: 25px;
+  padding-bottom: 68px;
+  width: 907px;
 }
 
 /*Modal*/
