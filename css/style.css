@@ -86,6 +86,10 @@ button {
   border: none;
 }
 
+.hover-button:focus {
+  background-color: var(--error);
+}
+
 /*Grid*/
 
 .page {
@@ -690,7 +694,6 @@ button {
 
 .button-left {
   background-image: url("../img/icon-left.svg");
-
 }
 
 .button-right {
@@ -753,10 +756,6 @@ button {
   text-transform: uppercase;
   padding-top: 11px;
   margin-top: 97px;
-}
-
-.button-open-catalog:focus {
-  background-color: var(--error);
 }
 
 /*Section popular products & manufacturers*/
@@ -1046,7 +1045,6 @@ padding-top: 35px;
   content: "\2015";
   color: var(--basic-red);
   padding-right: 12px;
-
 }
 
 .transport li {
@@ -1467,6 +1465,10 @@ padding-top: 35px;
   background-image: url("../img/checkbox-on-dis.svg");
 }
 
+.check-input:checked:hover:disabled + .check-box {
+  background-image: url("../img/checkbox-on-dis.svg");
+}
+
 .check-input:hover + .check-box {
   background-image: url("../img/checkbox-off-active.svg");
 }
@@ -1799,6 +1801,11 @@ padding-top: 35px;
   padding-right: 31px;
 }
 
+.red-button {
+  background-color: var(--basic-red);
+  color: var(--white);
+}
+
 .switching-buttons-number:hover,
 .switching-buttons-next:hover {
   border: 1px solid var(--basic-graylight);
@@ -1807,12 +1814,6 @@ padding-top: 35px;
 .switching-buttons-number:active,
 .switching-buttons-next:active {
   border: 1px solid var(--basic-red);
-}
-
-.switching-buttons-number:focus,
-.switching-buttons-next:focus {
-  background-color: var(--basic-red);
-  color: var(--white);
 }
 
 /*Section about perforators*/
