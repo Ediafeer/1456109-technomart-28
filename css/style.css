@@ -27,8 +27,8 @@
   --header-gray: #F2F6F8;
   --catalog-gray: #F7F3EC;
 
-  --base-font: 'PT Sans', sans-serif;
-  --second-font: 'Cuprum', sans-serif;
+  --base-font: PT Sans, 'Arial', sans-serif;
+  --second-font: Cuprum, 'Arial Narrow', sans-serif;
 
 }
 
@@ -149,7 +149,6 @@ button {
 .navigation-link {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .navigation-link a {
@@ -166,7 +165,7 @@ button {
   color: var(--white);
   background-color: var(--special-grey);
   border: none;
-
+  position: relative;
 }
 
 .navigation-link input {
@@ -190,7 +189,19 @@ button {
   width: 17px;
   height: 17px;
   top: 12px;
+  left: 17px;
+  z-index: 3;
   background-image: url("../img/icon-search.svg");
+  opacity: 0.3;
+}
+
+.width-search:hover::before {
+  opacity: 1;
+}
+
+.width-search:focus-within::before{
+  background-image: url("../img/icon-search-red.svg");
+  opacity: 1;
 }
 
 .navigation-link li {
@@ -551,8 +562,6 @@ button {
 .materials {
   grid-column: 1;
   display: block;
-  position: relative;
-  overflow: hidden;
   background-color: var(--special-yellow);
   background-image: url("../img/icon-materials.svg");
   background-repeat: no-repeat;
@@ -609,6 +618,8 @@ button {
   padding-top: 20px;
   padding-left: 22px;
   line-height: 30px;
+  position: relative;
+  overflow: hidden;
 }
 
 .materials-link,
