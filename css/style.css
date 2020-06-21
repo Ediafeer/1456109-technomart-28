@@ -233,6 +233,7 @@ button {
 
 .order a {
   width: 150px;
+  text-align: center;
   padding-left: 15px;
   padding-right: 15px;
   background-color: var(--basic-green);
@@ -491,7 +492,7 @@ button {
   width: 20px;
   height: 17px;
   top: 14px;
-  left: 19px;
+  left: 15px;
   background-image: url("../img/icon-login-in.svg");
 }
 
@@ -912,7 +913,6 @@ padding-top: 35px;
 .service-button {
   display: flex;
   padding-top: 70px;
-  padding-bottom: 99px;
   width: 240px;
   position: relative;
 }
@@ -954,8 +954,9 @@ padding-top: 35px;
 .guarantee-text,
 .credit-text {
   display: block;
-  width: 274px;
+  width: 279px;
   font-size: 13px;
+  padding-bottom: 27px;
 }
 
 .guarantee-text {
@@ -1000,7 +1001,7 @@ padding-top: 35px;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 185px;
+  height: 285px;
   background-position-x: 154px;
 }
 
@@ -1219,6 +1220,7 @@ padding-top: 35px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  margin-right: 4px;
   background: linear-gradient(0deg, #212A3A, #212A3A);
 }
 
@@ -1240,6 +1242,11 @@ padding-top: 35px;
   font-size: 16px;
   line-height: 18px;
   margin-right: 51px;
+}
+
+.developer a:hover,
+.mail a:hover {
+  text-decoration-line: underline;
 }
 
 .developer a:active,
@@ -1567,14 +1574,23 @@ padding-top: 35px;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.sort-text {
   padding-left: 19px;
 }
 
 .sort-filter {
   display: flex;
   margin-left: 140px;
-  width: 420px; 
-  justify-content: space-around;
+  max-width: 354px;
+  width: 100%; 
+  justify-content: space-between;
+  margin-right: 46px;
+}
+
+.triangle-up {
+  margin-right: 21px;
 }
 
 .triangle a,
@@ -1799,6 +1815,7 @@ padding-top: 35px;
 .switching-buttons-number,
 .switching-buttons-next {
   display: inline-block;
+  cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
