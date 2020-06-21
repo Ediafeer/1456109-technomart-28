@@ -739,7 +739,7 @@ button {
   position: absolute;
   bottom: 35px;
   left: 295px;
-  z-index: 20;
+  z-index: 3;
   display: flex;
   width: 30px;
   justify-content: space-between;
@@ -1085,7 +1085,7 @@ padding-top: 35px;
   font-size: 13px;
 }
 
-.map-button {
+.feedback-button {
   width: 300px;
 }
 
@@ -1942,6 +1942,16 @@ padding-top: 35px;
   height: 430px;
   background-color: var(--white);
   border-top: 7px solid var(--basic-red);
+  z-index: 8;
+}
+
+.modal-feedback-snow {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-form {
@@ -2070,4 +2080,46 @@ padding-top: 35px;
   color: var(--basic-text);
   padding-top: 11px;
   padding-bottom: 9px;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
