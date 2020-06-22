@@ -1700,6 +1700,7 @@ padding-top: 35px;
   padding-bottom: 7px;
   border-radius: 3px;
   position: relative;
+  cursor: pointer;
 }
 
 .buy {
