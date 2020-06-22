@@ -323,7 +323,7 @@ button {
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
-  margin-top: 38px;
+  padding-top: 43px;
   font-family: var(--second-font);
   width: 230px;
 }
@@ -345,7 +345,8 @@ button {
   height: 45px;
   border: 3px solid;
   border-color: var(--white);
-  margin-top: 41px;
+  margin-top: 46px;
+  margin-left: 6px;
 }
 
 .telephone::before {
@@ -363,8 +364,7 @@ button {
   color: var(--special-grey);
   font-style: normal;
   width: auto;
-  padding-left: 8px;
-  padding-right: 54px;
+  padding-left: 15px;
   max-width: 320px;
 }
 
@@ -373,18 +373,18 @@ button {
   flex-wrap: wrap;
 }
 .enter-button {
-  margin-top: 41px;
-  margin-left: 25px;
+  margin-top: 46px;
+  margin-left: 32px;
   width: 128px;
 }
 
 .registration-button {
-  margin-top: 41px;
-  margin-left: 10px;
+  margin-top: 46px;
+  margin-left: 2px;
 }
 
 .name-button {
-  margin-top: 41px;
+  margin-top: 46px;
   margin-left: 14px;
   position: relative;
 }
@@ -769,7 +769,7 @@ button {
   text-align: center;
   text-transform: uppercase;
   padding-top: 11px;
-  margin-top: 97px;
+  margin-top: 113px;
 }
 
 /*Section popular products & manufacturers*/
@@ -783,8 +783,9 @@ button {
 }
 
 .popular {
-  display: inline-block;
+  padding: 0;
   margin: 0;
+  display: inline-block;
   font-size: 30px;
   line-height: 30px;
   font-family: var(--second-font);
@@ -912,7 +913,7 @@ padding-top: 35px;
 
 .service-button {
   display: flex;
-  padding-top: 70px;
+  padding-top: 64px;
   width: 240px;
   position: relative;
 }
@@ -1038,20 +1039,22 @@ padding-top: 35px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
-  padding-top: 70px;
+  padding-top: 76px;
 }
 
 .company-text {
   margin: 0;
+  padding: 0;
   width: 478px;
   font-size: 13px;
   padding-top: 24px;
 }
 
 .company-slogan {
-  margin: 0em;
+  margin: 0;
+  padding: 0;
   width: 440px;
-  padding-top: 24px;
+  padding-top: 30px;
   font-size: 13px;
 }
 
@@ -1064,6 +1067,8 @@ padding-top: 35px;
 .transport li {
   font-size: 18px;
   font-family: var(--second-font);
+  padding-top: 12px;
+  line-height: 24px;
 }
 
 .company-button {
@@ -1081,8 +1086,12 @@ padding-top: 35px;
 }
 
 .map-text {
+  margin: 0;
+  padding: 0;
   width: 180px;
   font-size: 13px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 
 .feedback-button {
@@ -1584,7 +1593,7 @@ padding-top: 35px;
   display: flex;
   margin-left: 140px;
   max-width: 354px;
-  width: 100%; 
+  width: 100%;
   justify-content: space-between;
   margin-right: 46px;
 }
@@ -1737,6 +1746,7 @@ padding-top: 35px;
 
 .card-name {
   text-align: center;
+  margin: 0;
 }
 
 .catalog a {
@@ -1773,9 +1783,12 @@ padding-top: 35px;
   color: var(--white);
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 39px;
+  margin-top: 10px;
+  margin-bottom: 19px;
+  margin-left: 15px;
   position: relative;
 }
+
 
 .square::before, .square::after {
   content: "";
@@ -1795,10 +1808,17 @@ padding-top: 35px;
   top: -15px;
 }
 
-.catalog del {
+.old-price {
+  margin: 0;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
   color: var(--grey);
   display: inline-block;
-  max-width: 172px;
+  max-width: 220px;
+  width: 100%;
+
 }
 
 .catalog li:hover {
