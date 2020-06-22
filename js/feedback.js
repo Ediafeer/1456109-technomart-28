@@ -9,7 +9,7 @@ var isStorageSupport = true;
 var storage = "";
 
 try {
-    storage = localStorage.getItem("login");
+    storage = localStorage.getItem("feedbackName");
 } catch (err) {
     isStorageSupport = false;
 }
@@ -17,7 +17,6 @@ try {
 feedbackLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedbackPopup.classList.add("modal-show");
-
     if (storage) {
         feedbackName.value = storage;
         feedbackEmail.focus();
@@ -35,12 +34,12 @@ feedbackClose.addEventListener("click", function (evt) {
 feedbackForm.addEventListener("submit", function (evt) {
     if (!feedbackName.value || !feedbackEmail.value) {
     evt.preventDefault();
-    feedbackPopup.classList.add("modal-error");
+    feedbackPopup.classList.remove("modal-error");
     feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
-    feedbackPopup.classList.add("modal-error");    
+    feedbackPopup.classList.add("modal-error");   
     } else {
         if (isStorageSupport) {
-        localStorage.setItem("name", feedbackName.value);
+        localStorage.setItem("feedbackName", feedbackName.value);
         }
     }
 });
