@@ -27,8 +27,8 @@
   --header-gray: #F2F6F8;
   --catalog-gray: #F7F3EC;
 
-  --base-font: PT Sans, 'Arial', sans-serif;
-  --second-font: Cuprum, 'Arial Narrow', sans-serif;
+  --base-font: PT Sans, "Arial", sans-serif;
+  --second-font: Cuprum, "Arial Narrow", sans-serif;
 
 }
 
@@ -53,10 +53,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-button {
-  border: none;
 }
 
 .visually-hidden {
@@ -88,6 +84,10 @@ button {
 
 .hover-button:focus {
   background-color: var(--error);
+}
+
+.hover-button:hover {
+  background-color: #ca2c37;
 }
 
 /*Grid*/
@@ -123,7 +123,8 @@ button {
   background-color: var(--special-grey);
 }
 
-.logo-background {
+.logo-background,
+.logo-background-main-page {
   display: inline-flex;
   min-width: 220px;
   height: 47px;
@@ -350,7 +351,7 @@ button {
 }
 
 .telephone::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: -39px;
@@ -374,13 +375,13 @@ button {
 }
 .enter-button {
   margin-top: 46px;
-  margin-left: 32px;
+  margin-left: 22px;
   width: 128px;
 }
 
 .registration-button {
   margin-top: 46px;
-  margin-left: 2px;
+  margin-left: 10px;
 }
 
 .name-button {
@@ -399,17 +400,6 @@ button {
   background-image: url("../img/icon-user.svg");
 }
 
-.name::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 17px;
-  top: 14px;
-  right: 17px;
-  background-image: url("../img/icon-login-out.svg");
-
-}
-
 .name:hover::before{
   background-image: url("../img/login-in-grey.svg");
 }
@@ -424,11 +414,12 @@ button {
   background-image: url("../img/login-out-click.svg");
 }
 
-.my-order,
-.my-office {
+.my-order a,
+.my-office a {
   font-family: var(--second-font);
   font-size: 16px;
   line-height: 18px;
+  color: var(--special-grey);
 }
 
 .my-order {
@@ -453,7 +444,6 @@ button {
 .registration-button a,
 .enter-button a {
   display: block;
-  width: 121px;
   color: var(--basic-text);
   font-size: 21px;
   line-height: 21px;
@@ -465,9 +455,31 @@ button {
 }
 
 .name-button a {
-  width: 299px;
   padding-left: 56px;
   padding-right: 57px;
+}
+
+.button-out {
+  position: absolute;
+  right: 17px;
+  top: 14px;
+}
+
+.button-out svg:hover {
+  fill: var(--basic-gray);
+}
+
+.button-out svg:active {
+  fill: var(--basic-graylight);
+}
+
+.name-button .button-out {
+  width: 20px;
+  padding: 0;
+}
+
+.button-out a {
+  width: 20px;
 }
 
 .enter-button a {
@@ -720,6 +732,7 @@ button {
   background-color: transparent;
   z-index: 3;
   display: flex;
+  border: none;
   width: 22px;
   height: 40px;
   justify-content: space-between;
@@ -814,7 +827,7 @@ button {
 }
 
 .all-popular {
-    margin-left: 435px;
+  margin-left: 435px;
 }
 
 .all-popular-manufacturers{
@@ -876,7 +889,7 @@ button {
 }
 
 .lg {
-padding-top: 35px;
+  padding-top: 35px;
 }
 
 .aeg {
@@ -925,6 +938,7 @@ padding-top: 35px;
 .guarantee-button,
 .credit-button {
   display: inline-flex;
+  border: none;
   margin: 0;
   min-width: 240px;
   padding-top: 14px;
@@ -1015,6 +1029,7 @@ padding-top: 35px;
 
 .button-application {
   font-family: var(--second-font);
+  border: none;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
@@ -1700,6 +1715,7 @@ padding-top: 35px;
 
 .buy,
 .in-bookmark {
+  border: none;
   width: 135px;
   font-family: var(--second-font);
   line-height: 18px;
@@ -1856,6 +1872,7 @@ padding-top: 35px;
   padding-right: 15px;
   border-radius: 3px;
   background-color: var(--white);
+  color: var(--basic-text);
   border: 1px solid #E5E5E5;
   font-size: 13px;
   line-height: 18px;
