@@ -216,11 +216,16 @@ img {
   background-color: var(--basic-red);
 }
 
-.basket a,
 .bookmarks a {
   max-width: 150px;
   padding-left: 43px;
   padding-right: 24px;
+}
+
+.basket a {
+  max-width: 150px;
+  padding-left: 50px;
+  padding-right: 20px;
 }
 
 .background-red {
@@ -280,7 +285,7 @@ img {
   content: "";
   position: absolute;
   top: 13px;
-  left: 18px;
+  left: 25px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
@@ -375,8 +380,8 @@ img {
 }
 .enter-button {
   margin-top: 46px;
-  margin-left: 22px;
-  width: 128px;
+  margin-left: 32px;
+  width: 121px;
 }
 
 .registration-button {
@@ -483,7 +488,7 @@ img {
 }
 
 .enter-button a {
-  padding-left: 10px;
+  padding-left: 18px;
 }
 
 .registration-button a {
@@ -504,7 +509,7 @@ img {
   width: 20px;
   height: 17px;
   top: 14px;
-  left: 15px;
+  left: 19px;
   background-image: url("../img/icon-login-in.svg");
 }
 
@@ -541,11 +546,11 @@ img {
 }
 
 .main-page a {
-  padding-left: 22px;
+  padding-left: 25px;
 }
 
 .contact-page a {
-  padding-right: 22px;
+  padding-right: 20px;
 }
 
 .site-navigation a:hover {
@@ -627,6 +632,7 @@ img {
 .discounts,
 .delivery {
   font-size: 24px;
+  font-weight: bold;
   color: var(--white);
   padding-top: 20px;
   padding-left: 22px;
@@ -642,6 +648,7 @@ img {
 .delivery-link {
   display: block;
   font-size: 14px;
+  font-weight: normal;
   color: var(--white);
   line-height: 18px;
   width: 135px;
@@ -792,7 +799,7 @@ img {
   display: flex;
   background-color: var(--grey-die);
   margin-top: 59px;
-  padding-left: 20px;
+  padding-left: 28px;
   margin-bottom: 20px;
 }
 
@@ -803,6 +810,7 @@ img {
   vertical-align: inherit;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   font-family: var(--second-font);
   text-transform: uppercase;
   padding-top: 29px;
@@ -814,7 +822,7 @@ img {
 .all-popular {
   display: inline-block;
   vertical-align: inherit;
-  width: 192px;
+  min-width: 192px;
   height: 38px;
   background-color: var(--basic-red);
   color: var(--white);
@@ -827,11 +835,11 @@ img {
 }
 
 .all-popular {
-  margin-left: 435px;
+  margin-left: 444px;
 }
 
 .all-popular-manufacturers{
-  margin-left: 325px;
+  margin-left: 335px;
 }
 
 .popular-catalog ul {
@@ -843,9 +851,13 @@ img {
 .manufacturers {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   background-color: var(--white);
-  padding-bottom: 50px;
+  padding-bottom: 44px;
+  margin-left: -20px;
+}
+
+.manufacturers li {
+  padding-left: 20px;
 }
 
 .manufacturers-logo:hover {
@@ -860,8 +872,8 @@ img {
 .manufacturers-logo {
   display: block;
   background-repeat: no-repeat;
-  width: 218px;
-  height: 143px;
+  width: 220px;
+  height: 145px;
   border: 1px solid var(--special-greylight);
   text-align: center;
   background-color: var(--white);
@@ -908,28 +920,30 @@ img {
 
 .service-header {
   padding-top: 64px;
+  padding-bottom: 25px;
 }
 
 .delivery-header,
 .service-header,
-.guarantee-header,
-.credit-header {
+.guarantee-header {
   margin: 0;
   display: flex;
   font-family: var(--second-font);
   font-size: 30px;
+  font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .service-text {
+  margin: 0;
   width: 396px;
   font-size: 13px;
 }
 
 .service-button {
   display: flex;
-  padding-top: 64px;
+  padding-top: 70px;
   width: 240px;
   position: relative;
 }
@@ -972,9 +986,12 @@ img {
 .guarantee-text,
 .credit-text {
   display: block;
+  margin: 0;
   width: 279px;
+  height: auto;
   font-size: 13px;
-  padding-bottom: 27px;
+  padding-top: 27px;
+  padding-bottom: 28px;
 }
 
 .guarantee-text {
@@ -984,6 +1001,13 @@ img {
 .delivery-header,
 .guarantee-header,
 .credit-header {
+  margin: 0;
+  display: flex;
+  font-family: var(--second-font);
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
   color: var(--special-grey);
 }
 
@@ -1003,6 +1027,7 @@ img {
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   min-width: 619px;
+  height: 291px;
   background-position-x: 151px;
 }
 
@@ -1011,6 +1036,7 @@ img {
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   min-width: 619px;
+  height: 291px;
   background-position-x: 220px;
 }
 
@@ -1019,8 +1045,8 @@ img {
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 285px;
-  background-position-x: 154px;
+  height: 291px;
+  background-position-x: 165px;
 }
 
 .service-hidden {
@@ -1030,6 +1056,7 @@ img {
 .button-application {
   font-family: var(--second-font);
   border: none;
+  border-radius: 2px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--white);
@@ -1057,7 +1084,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
-  padding-top: 76px;
+  padding-top: 70px;
 }
 
 .company-text {
@@ -1072,21 +1099,28 @@ img {
   margin: 0;
   padding: 0;
   width: 440px;
-  padding-top: 30px;
+  padding-top: 28px;
   font-size: 13px;
 }
 
 .transport li::before {
-  content: "\2015";
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
   color: var(--basic-red);
-  padding-right: 12px;
+  left: 0px;
+  top: 12px;
 }
 
 .transport li {
+  position: relative;
   font-size: 18px;
   font-family: var(--second-font);
-  padding-top: 12px;
   line-height: 24px;
+  padding-left: 37px;
+  padding-bottom: 12px;
 }
 
 .company-button {
@@ -1095,12 +1129,13 @@ img {
   text-align: center;
   padding-top: 11px;
   padding-bottom: 9px;
+  line-height: 18px;
   background-color: var(--basic-red);
   font-family: var(--second-font);
   text-transform: uppercase;
   color: var(--white);
-  margin-top: 20px;
-  margin-bottom: 70px;
+  margin-top: 8px;
+  margin-bottom: 69px;
 }
 
 .map-text {
@@ -1113,6 +1148,7 @@ img {
 }
 
 .feedback-button {
+  margin-top: 20px;
   width: 300px;
 }
 
@@ -1171,8 +1207,7 @@ img {
   display: inline-flex;
   vertical-align: inherit;
   justify-content: space-between;
-  margin-top: 34px;
-  padding-right: 5px;
+  margin-top: 28px;
   width: 100%;
 }
 
@@ -1182,15 +1217,17 @@ img {
   font-family: var(--second-font);
   color: var(--basic-background);
   font-size: 18px;
-  max-width: 415px;
-  width: 100%;
-  padding-top: 22px;
-  padding-right: 74px;
+  min-width: 413px;
+  width: auto;
+  padding-top: 23px;
+  padding-right: 76px;
+  padding-left: 3px;
   padding-bottom: 54px;
 }
 
 .address-footer-text {
   font-style: normal;
+  width: 323px;
 }
 
 .footer-telephone {
@@ -1240,14 +1277,15 @@ img {
   width: 132px;
   margin-right: 118px;
   align-items: center;
+  margin-left: 5px;
 }
 
 .social a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 4px;
   background: linear-gradient(0deg, #212A3A, #212A3A);
@@ -1267,6 +1305,8 @@ img {
 }
 
 .mail {
+  margin: 0;
+  padding: 0;
   width: 137px;
   font-size: 16px;
   line-height: 18px;
@@ -1284,8 +1324,9 @@ img {
 }
 
 .developer {
+  margin: 0;
+  padding: 0;
   width: 98px;
-  margin: auto;
   font-size: 16px;
   line-height: 18px;
 }
@@ -1293,6 +1334,7 @@ img {
 .сopyright {
   display: inline-block;
   vertical-align: inherit;
+  margin: 0;
   width: 227px;
   font-size: 16px;
   line-height: 18px;
@@ -1681,18 +1723,19 @@ img {
   font-family: var(--second-font);
   font-size: 14px;
   line-height: 18px;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
   vertical-align: inherit;
   width: 100px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 4px;
   background-color: var(--basic-red);
   color: var(--white);
   transform: rotateZ(45deg);
-  right: -25px;
-  top: 10px
+  right: -27px;
+  top: 7px
 }
 
 .work-card:hover .hover-card {
@@ -1780,7 +1823,6 @@ img {
   line-height: 20px;
   font-weight: bold;
   max-width: 185px;
-  max-height: 60px;
   overflow: hidden;
   display: inline-block;
   vertical-align: inherit;
@@ -1810,6 +1852,7 @@ img {
   color: var(--white);
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-right: 15px;
   margin-top: 10px;
   margin-bottom: 19px;
   margin-left: 15px;
