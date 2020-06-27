@@ -761,6 +761,7 @@ button {
 
 .button-open-catalog {
   display: inline-block;
+  vertical-align: inherit;
   color: var(--white);
   line-height: 18px;
   width: 192px;
@@ -786,6 +787,7 @@ button {
   padding: 0;
   margin: 0;
   display: inline-block;
+  vertical-align: inherit;
   font-size: 30px;
   line-height: 30px;
   font-family: var(--second-font);
@@ -798,6 +800,7 @@ button {
 .all-popular-manufacturers,
 .all-popular {
   display: inline-block;
+  vertical-align: inherit;
   width: 192px;
   height: 38px;
   background-color: var(--basic-red);
@@ -1151,6 +1154,7 @@ padding-top: 35px;
 
 .footer-list {
   display: inline-flex;
+  vertical-align: inherit;
   justify-content: space-between;
   margin-top: 34px;
   padding-right: 5px;
@@ -1272,6 +1276,7 @@ padding-top: 35px;
 
 .сopyright {
   display: inline-block;
+  vertical-align: inherit;
   width: 227px;
   font-size: 16px;
   line-height: 18px;
@@ -1644,6 +1649,7 @@ padding-top: 35px;
 
 .work-card {
   display: inline-block;
+  vertical-align: inherit;
   width: 220px;
   border: 1px solid var(--special-greylight);
   text-align: center;
@@ -1662,6 +1668,7 @@ padding-top: 35px;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: inherit;
   width: 100px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -1774,6 +1781,7 @@ padding-top: 35px;
 .price {
   margin: 0;
   display: inline-block;
+  vertical-align: inherit;
   width: 141px;
   font-size: 17px;
   line-height: 18px;
@@ -1795,6 +1803,7 @@ padding-top: 35px;
   content: "";
   position: absolute;
   display: inline-block;
+  vertical-align: inherit;
   width: 16px;
   height: 43px;
   background-color: var(--white);
@@ -1836,6 +1845,7 @@ padding-top: 35px;
 .switching-buttons-number,
 .switching-buttons-next {
   display: inline-block;
+  vertical-align: inherit;
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1992,6 +2002,7 @@ padding-top: 35px;
 .ap-email,
 .ap-text {
   display: inline-block;
+  vertical-align: inherit;
   font-family: var(--second-font);
   font-size: 18px;
 }
@@ -2004,6 +2015,7 @@ padding-top: 35px;
 .ap-email-input,
 .ap-text-input {
   display: inline-block;
+  vertical-align: inherit;
   font-family: var(--base-font);
   width: 220px;
   margin-right: 20px;
@@ -2081,6 +2093,7 @@ padding-top: 35px;
 
 .place-order {
   display: inline-block;
+  vertical-align: inherit;
   font-family: var(--second-font);
   line-height: 18px;
   text-transform: uppercase;
