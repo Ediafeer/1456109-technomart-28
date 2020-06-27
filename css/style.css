@@ -680,11 +680,11 @@ button {
 }
 
 .site-wrapper-1 {
-  background-image: url("../img/layer99.png");
+  background-image: url("../img/slide1.jpg");
 }
 
 .site-wrapper-2 {
-  background-image: url("../img/layer100.png");
+  background-image: url("../img/slide2.jpg");
 }
 
 .title-slide {
@@ -1163,6 +1163,7 @@ padding-top: 35px;
 
 .address-footer {
   display: inline-block;
+  vertical-align: inherit;
   font-family: var(--second-font);
   color: var(--basic-background);
   font-size: 18px;
@@ -1766,6 +1767,7 @@ padding-top: 35px;
   max-height: 60px;
   overflow: hidden;
   display: inline-block;
+  vertical-align: inherit;
 }
 
 .container-img {
@@ -1826,6 +1828,7 @@ padding-top: 35px;
   text-align: center;
   color: var(--grey);
   display: inline-block;
+  vertical-align: inherit;
   max-width: 220px;
   width: 100%;
 
