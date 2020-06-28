@@ -120,7 +120,7 @@ img {
 /*Header first level*/
 
 .navigation-background-top{
-  background-color: var(--special-grey);
+  background-color: var(--guidance-grey);
 }
 
 .logo-background,
@@ -217,15 +217,12 @@ img {
 }
 
 .bookmarks a {
-  max-width: 150px;
   padding-left: 43px;
   padding-right: 24px;
 }
 
 .basket a {
-  max-width: 150px;
-  padding-left: 50px;
-  padding-right: 20px;
+  padding-left: 35px;
 }
 
 .background-red {
@@ -234,8 +231,13 @@ img {
 
 .basket,
 .bookmarks {
-  width: 150px;
+  width: 164px;
 }
+
+.basket {
+  width: 136px;
+}
+
 
 .order a {
   width: 150px;
@@ -285,7 +287,7 @@ img {
   content: "";
   position: absolute;
   top: 13px;
-  left: 25px;
+  left: 12px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
@@ -307,6 +309,11 @@ img {
 
 .navigation-link a:active {
   opacity: 0.5;
+  background-color: var(--click-grey-nav-link);
+}
+
+.order a:active {
+  background-color: var(--basic-green);
 }
 
 .navigation-link input:focus {
@@ -319,7 +326,7 @@ img {
 .header-contact{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 45px;
+  padding-bottom: 38px;
 }
 
 .activity {
@@ -428,13 +435,13 @@ img {
 }
 
 .my-order {
-  padding-top: 7px;
+  padding-top: 5px;
   padding-left: 60px;
   position: relative;
 }
 
 .my-office {
-  padding-top: 7px;
+  padding-top: 5px;
   padding-left: 11px;
 }
 
@@ -1347,8 +1354,7 @@ img {
 
 .bread-crumb {
   display: flex;
-  padding-top: 21px;
-  padding-left: 11px;
+  padding-top: 24px;
 }
 
 .bread-crumb-catalog,
@@ -1359,14 +1365,20 @@ img {
   text-transform: uppercase;
   font-size: 13px;
   color: var(--basic-text);
-  padding-left: 40px;
+  padding-left: 55px;
+}
+
+.bread-crumb-tool {
+  padding-left: 41px;
+}
+
+.bread-crumb-perforators {
+  padding-left: 43px;
 }
 
 .icon-home::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -11px;
   width: 14px;
   height: 12px;
   background-image: url("../img/icon-home.svg");
@@ -1375,8 +1387,7 @@ img {
 .bread-crumb-catalog::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 15px;
+  left: 30px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1386,7 +1397,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 18px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1396,7 +1407,7 @@ img {
   content: "";
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 18px;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1408,7 +1419,7 @@ img {
   display: flex;
   background-color: var(--header-gray);
   margin-top: 20px;
-  padding-left: 20px;
+  padding-left: 29px;
   margin-bottom: 20px;
 }
 
@@ -1428,7 +1439,7 @@ img {
   padding-left: 18px;
   background-color: var(--catalog-gray);
   font-weight: normal;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .filter {
@@ -1438,11 +1449,11 @@ img {
 
 .range-filter {
   width: 220px;
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .filter-line {
-  padding-bottom: 25px;
+  padding-bottom: 27px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1470,17 +1481,17 @@ img {
 }
 
 .range-controls .bar {
-  width: 60%;
+  width: 80%;
   height: 2px;
-  background:var(--basic-green);
+  background:var(--success);
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid var(--white);
   background-color:#ababab;
@@ -1494,7 +1505,7 @@ img {
 }
 
 .range-controls .toggle-max {
-  left: 122px;
+  left: 160px;
 }
 
 .price-controls {
@@ -1515,10 +1526,26 @@ img {
   padding-left: 25px;
 }
 
+.filter-manufacturers legend {
+  padding-bottom: 14px;
+}
+
+
+.filter-manufacturers p {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+
+
 /*Check*/
 
 .check {
   padding-left: 35px;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase ;
 }
 
 .check-input {
@@ -1569,10 +1596,28 @@ img {
   background-image: url("../img/checkbox-on-active.svg");
 }
 
+.filter-line-second {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 /*Radio*/
+
+.filter-supply legend {
+  padding-bottom: 22px;
+}
+
+.filter-supply p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 17px;
+}
 
 .radio {
   padding-left: 35px;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 .radio-input {
@@ -1618,7 +1663,7 @@ img {
 }
 
 .show {
-  margin-top: 35px;
+  margin-top: 17px;
   width: 220px;
   line-height: 18px;
   font-size: 13px;
@@ -1633,7 +1678,7 @@ img {
 
 .filter-manufacturers {
   margin-top: 17px;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .sort {
@@ -1662,10 +1707,12 @@ img {
 }
 
 .triangle-up {
-  margin-right: 21px;
+  margin-right: 18px;
+  color: var(--basic-red);
 }
 
-.triangle a,
+.triangle-up,
+.triangle-up-min,
 .sort-link {
   color: var(--basic-text);
   opacity: 0.3;
@@ -1920,6 +1967,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 5px;
 }
 
 .switching-buttons-next {
@@ -1949,6 +1997,7 @@ img {
   font-family: var(--second-font);
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
   padding-top: 64px;
 }
@@ -1957,7 +2006,7 @@ img {
   margin: 0;
   font-size: 13px;
   padding-top: 25px;
-  padding-bottom: 68px;
+  padding-bottom: 69px;
   width: 907px;
 }
 
