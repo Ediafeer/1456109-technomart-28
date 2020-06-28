@@ -1548,6 +1548,10 @@ img {
   text-transform: uppercase ;
 }
 
+.check:focus-within {
+  outline: auto;
+}
+
 .check-input {
   position: absolute;
   -moz-appearance: none;
@@ -1618,6 +1622,10 @@ img {
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
+}
+
+.radio:focus-within {
+  outline: auto;
 }
 
 .radio-input {
