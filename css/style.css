@@ -2175,7 +2175,7 @@ img {
 }
 
 .modal-basket {
-  display: none;
+  display: block;
   width: 620px;
   height: 282px;
   z-index: 5;
@@ -2184,7 +2184,7 @@ img {
   background-image: url("../img/icon-mark.svg");
   background-repeat: no-repeat;
   background-position-x: 81px;
-  background-position-y: 55px;
+  background-position-y: 48px;
 }
 
 .notification-text {
@@ -2194,7 +2194,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 73px;
+  margin-top: 66px;
   text-align: center;
   padding-bottom: 67px;
 }
@@ -2218,10 +2218,11 @@ img {
   width: 192px;
   padding-top: 11px;
   padding-bottom: 9px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .resume {
+  border: none;
   width: 192px;
   background-color: var(--white);
   font-family: var(--second-font);
