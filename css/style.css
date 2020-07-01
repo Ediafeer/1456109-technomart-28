@@ -238,7 +238,6 @@ img {
   width: 136px;
 }
 
-
 .order a {
   width: 150px;
   text-align: center;
@@ -551,6 +550,8 @@ img {
   color: inherit;
   padding-top: 16px;
   padding-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .main-page a {
@@ -1188,8 +1189,10 @@ img {
 .footer-menu {
   display: inline-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 37px;
   width: 100%;
+  max-width: 527px;
 }
 
 .footer-menu a {
@@ -1200,6 +1203,8 @@ img {
 .footer-list a{
   font-family: var(--second-font);
   font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer-list a {
@@ -1214,8 +1219,10 @@ img {
   display: inline-flex;
   vertical-align: inherit;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 28px;
   width: 100%;
+  max-width: 527px;
 }
 
 .address-footer {
