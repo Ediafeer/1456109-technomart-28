@@ -1037,6 +1037,7 @@ img {
   min-width: 619px;
   height: 291px;
   background-position-x: 151px;
+  overflow: overlay;
 }
 
 .guarantee-service {
@@ -1046,6 +1047,7 @@ img {
   min-width: 619px;
   height: 291px;
   background-position-x: 220px;
+  overflow: overlay;
 }
 
 .credit-service {
@@ -1055,6 +1057,7 @@ img {
   min-width: 619px;
   height: 291px;
   background-position-x: 165px;
+  overflow: overlay;
 }
 
 .service-hidden {
