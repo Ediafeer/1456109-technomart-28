@@ -860,7 +860,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--white);
-  padding-bottom: 44px;
+  padding-bottom: 50px;
   margin-left: -20px;
 }
 
@@ -924,6 +924,8 @@ img {
 
 .service-background {
   background-color: var(--basic-background);
+  min-height: 522px;
+  height: 100%;
 }
 
 .service-header {
@@ -1035,7 +1037,7 @@ img {
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 291px;
+  height: 285px;
   background-position-x: 151px;
   overflow: overlay;
 }
@@ -1045,7 +1047,7 @@ img {
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 291px;
+  height: 285px;
   background-position-x: 220px;
   overflow: overlay;
 }
@@ -1055,7 +1057,7 @@ img {
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 291px;
+  height: 285px;
   background-position-x: 165px;
   overflow: overlay;
 }
@@ -1175,7 +1177,7 @@ img {
   height: 68px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
-  margin-right: 173px;
+  margin-right: 170px;
 }
 
 .logo-footer {
@@ -1195,7 +1197,7 @@ img {
   flex-wrap: wrap;
   margin-top: 37px;
   width: 100%;
-  max-width: 527px;
+  max-width: 553px;
 }
 
 .footer-menu a {
@@ -1206,8 +1208,8 @@ img {
 .footer-list a{
   font-family: var(--second-font);
   font-size: 18px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .footer-list a {
