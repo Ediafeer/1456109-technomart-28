@@ -325,7 +325,7 @@ img {
 .header-contact{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-bottom: 38px;
+  padding-bottom: 42px;
 }
 
 .activity {
