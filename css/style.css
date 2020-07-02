@@ -1010,7 +1010,7 @@ img {
   width: 279px;
   height: auto;
   font-size: 13px;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 28px;
 }
 
@@ -1018,7 +1018,7 @@ img {
   width: 319px;
 }
 
-.delivery-headerб
+.delivery-header,
 .guarantee-header,
 .credit-header {
   margin: 0;
@@ -1048,10 +1048,10 @@ img {
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 285px;
+  min-height: 285px;
+  height: auto;
   background-position-x: 151px;
   background-position-y: 21px;
-  overflow: overlay;
 }
 
 .guarantee-service {
@@ -1060,7 +1060,8 @@ img {
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   min-width: 629px;
-  height: 285px;
+  min-height: 285px;
+  height: auto;
   background-position-x: 239px;
   background-position-y: 0px;
   margin-right: -10px;
@@ -1073,7 +1074,8 @@ img {
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   min-width: 639px;
-  height: 285px;
+  min-height: 285px;
+  height: auto;
   background-position-x: 165px;
   margin-right: -15px;
 }
@@ -1164,7 +1166,7 @@ img {
   text-transform: uppercase;
   color: var(--white);
   margin-top: 8px;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .map-text {
