@@ -924,7 +924,7 @@ img {
 
 .service-background {
   background-color: var(--basic-background);
-  min-height: 522px;
+  min-height: 521px;
   height: 100%;
 }
 
@@ -956,6 +956,10 @@ img {
   padding-top: 70px;
   width: 240px;
   position: relative;
+}
+
+.service-button .delivery-button {
+  margin-top: 3px;
 }
 
 .delivery-button,
@@ -1000,7 +1004,7 @@ img {
   width: 279px;
   height: auto;
   font-size: 13px;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-bottom: 28px;
 }
 
@@ -1014,7 +1018,7 @@ img {
   margin: 0;
   display: flex;
   font-family: var(--second-font);
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
@@ -1033,16 +1037,19 @@ img {
 }
 
 .delivery-service {
+  display: none;
   position: relative;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   min-width: 619px;
   height: 285px;
   background-position-x: 151px;
+  background-position-y: 21px;
   overflow: overlay;
 }
 
 .guarantee-service {
+  display: none;
   position: relative;
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
@@ -1053,6 +1060,7 @@ img {
 }
 
 .credit-service {
+  display: none;
   position: relative;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
@@ -1063,7 +1071,7 @@ img {
 }
 
 .service-hidden {
-  display: none;
+  display: block;
 }
 
 .button-application {
