@@ -162,7 +162,6 @@ img {
 .search {
   padding: 0;
   max-width: 271px;
-  line-height: 24px;
   height: 42px;
   color: var(--white);
   background-color: var(--guidance-grey);
@@ -925,7 +924,8 @@ img {
 
 .service-background {
   background-color: var(--basic-background);
-  height: 522px;
+  min-height: 522px;
+  height: 100%;
 }
 
 .service-header {
@@ -1000,7 +1000,7 @@ img {
   width: 279px;
   height: auto;
   font-size: 13px;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-bottom: 28px;
 }
 
@@ -1014,7 +1014,7 @@ img {
   margin: 0;
   display: flex;
   font-family: var(--second-font);
-  font-size: 30px;
+  font-size: 36px;
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
@@ -1033,41 +1033,37 @@ img {
 }
 
 .delivery-service {
-  display: none;
   position: relative;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 291px;
+  height: 285px;
   background-position-x: 151px;
-  background-position-y: 20px;
   overflow: overlay;
 }
 
 .guarantee-service {
-  display: none;
   position: relative;
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 291px;
+  height: 285px;
   background-position-x: 220px;
   overflow: overlay;
 }
 
 .credit-service {
-  display: none;
   position: relative;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   min-width: 619px;
-  height: 291px;
+  height: 285px;
   background-position-x: 165px;
   overflow: overlay;
 }
 
 .service-hidden {
-  display: block;
+  display: none;
 }
 
 .button-application {
@@ -1181,7 +1177,7 @@ img {
   height: 68px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.24);
-  margin-right: 173px;
+  margin-right: 170px;
 }
 
 .logo-footer {
@@ -1201,7 +1197,7 @@ img {
   flex-wrap: wrap;
   margin-top: 37px;
   width: 100%;
-  max-width: 527px;
+  max-width: 553px;
 }
 
 .footer-menu a {
@@ -1212,8 +1208,8 @@ img {
 .footer-list a{
   font-family: var(--second-font);
   font-size: 18px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .footer-list a {
@@ -2159,7 +2155,6 @@ img {
   border: 2px solid var(--basic-graylight);
   border-radius: 2px;
   font-size: 13px;
-  line-height: 24px;
 }
 
 .your-name-input::placeholder,
