@@ -162,6 +162,7 @@ img {
 .search {
   padding: 0;
   max-width: 271px;
+  line-height: 24px;
   height: 42px;
   color: var(--white);
   background-color: var(--guidance-grey);
@@ -860,7 +861,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--white);
-  padding-bottom: 44px;
+  padding-bottom: 50px;
   margin-left: -20px;
 }
 
@@ -924,6 +925,7 @@ img {
 
 .service-background {
   background-color: var(--basic-background);
+  height: 522px;
 }
 
 .service-header {
@@ -998,7 +1000,7 @@ img {
   width: 279px;
   height: auto;
   font-size: 13px;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 28px;
 }
 
@@ -1012,7 +1014,7 @@ img {
   margin: 0;
   display: flex;
   font-family: var(--second-font);
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   line-height: 30px;
   text-transform: uppercase;
@@ -1031,16 +1033,19 @@ img {
 }
 
 .delivery-service {
+  display: none;
   position: relative;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
   min-width: 619px;
   height: 291px;
   background-position-x: 151px;
+  background-position-y: 20px;
   overflow: overlay;
 }
 
 .guarantee-service {
+  display: none;
   position: relative;
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
@@ -1051,6 +1056,7 @@ img {
 }
 
 .credit-service {
+  display: none;
   position: relative;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
@@ -1061,7 +1067,7 @@ img {
 }
 
 .service-hidden {
-  display: none;
+  display: block;
 }
 
 .button-application {
@@ -2153,6 +2159,7 @@ img {
   border: 2px solid var(--basic-graylight);
   border-radius: 2px;
   font-size: 13px;
+  line-height: 24px;
 }
 
 .your-name-input::placeholder,
