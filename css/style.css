@@ -2194,11 +2194,16 @@ img {
 }
 
 .ap-text-input {
+  margin: 0;
+  width: 0;
+  height: 0;
   width: 460px;
   height: 114px;
   padding-top: 12px;
   padding-bottom: 80px;
   margin-bottom: 27px;
+  resize: none;
+  overflow: hidden;
 }
 
 .modal-background {
