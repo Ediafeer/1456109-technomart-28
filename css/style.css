@@ -382,7 +382,7 @@ img {
   font-style: normal;
   width: auto;
   padding-top: 2px;
-  padding-left: 15px;
+  padding-left: 16px;
   max-width: 320px;
 }
 
@@ -930,7 +930,7 @@ img {
 
 .service-background {
   background-color: var(--basic-background);
-  min-height: 521px;
+  min-height: 522px;
   height: 100%;
 }
 
@@ -1378,6 +1378,7 @@ img {
   font-size: 16px;
   line-height: 18px;
   margin-right: 161px;
+  margin-top: 1px;
 }
 
 /*Catalog page*/
